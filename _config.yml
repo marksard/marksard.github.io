@@ -17,7 +17,7 @@ title: mark in da house
 email: marksard@非公開
 description: >- # this means to ignore newlines until "baseurl:"
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: '' # the subpath of your site, e.g. /blog
 url: "https://marksard.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: marksard
 github_username:  marksard
@@ -25,9 +25,13 @@ github_username:  marksard
 # Build settings
 encoding: utf-8
 markdown: kramdown
-theme: jekyll-swiss #minima
+github: [metadata]
+theme: jekyll-theme-leap-day #minima
+# remote_theme: "pages-themes/minimal"
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -26,7 +26,7 @@ github_username:  marksard
 encoding: utf-8
 markdown: kramdown
 github: [metadata]
-theme: jekyll-theme-leap-day #minima
+theme: jekyll-theme-midnight
 # remote_theme: "pages-themes/minimal"
 plugins:
   - jekyll-feed

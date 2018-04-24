@@ -1,48 +1,54 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Title of your blog; shows in the header
+name: "P O I N T o f I M P A C T"
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: P O I N T o f I M P A C T
-email: marksard@非公開
-description: >- # this means to ignore newlines until "baseurl:"
+# Description of your content (will only be used on Google Search)
+description: "marksard, 3rdproject, magnetwindow"
 
-baseurl: '' # the subpath of your site, e.g. /blog
-url: "https://marksard.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: marksard
-github_username:  marksard
-
-# Build settings
+# Your name. Will show in your footer + sidebar
+author: "marksard"
+lang: ja
+timezone: Asia/Tokyo
 encoding: utf-8
-markdown: kramdown
-github: [metadata]
-theme: minima #jekyll-swiss
-# remote_theme: "pages-themes/minimal"
-plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
-  - jekyll-seo-tag
 
+url: "http://marksard.github.io"
+baseurl: ""
+
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
+author-bio: "Joy of making, Smile be making, Interest and making."
+
+# Social Accounts (mine, as placeholders)
+github: marksard
+qiita: marksard
+twitter: marksard
+instagram: marksardine
+flickr: 95834336@N03
+
+# Google Analytics (you may want to changes these with yours or even delete :)
+ga_domain: marksard.github.io
+ga_tracking_id: UA-117920855-1
 google_analytics: UA-117920855-1
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Handling Reading
+exclude: ["README.md", ".gitignore", "Gemfile", "Gemfile.lock", "vendor", "art"]
+
+# Plugins
+gems: [jekyll-redirect-from, jekyll-paginate]
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+
+# Outputting
+permalink: pretty
+paginate: 5
+paginate_path: "/page/:num"
+
+# Markdown Processors
+kramdown:
+  input: GFM
+
+# SCSS
+sass:
+  sass_dir: _scss
+  style: :compressed
+

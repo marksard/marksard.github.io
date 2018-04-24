@@ -2,8 +2,7 @@
 layout: post
 title: "はじめました"
 date: 2018-04-19 14:00:00 +0900
-categories: ネタ他
-tag: ネタ他
+tag: [other]
 ---
 
 # 再開というべきかな

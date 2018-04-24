@@ -1,0 +1,16 @@
+# To generate the tag page will need to be defined here
+
+magnetwindow:
+  name: magnetwindow
+development:
+  name: development
+other:
+  name: windows
+other:
+  name: linux
+raspberrypi:
+  name: raspberrypi
+network:
+  name: network
+other:
+  name: other

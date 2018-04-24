@@ -2,8 +2,7 @@
 layout: post
 title: "4年前、3rdproject.mine.nuサイト閉鎖の真相"
 date: 2018-04-23 14:00:00 +0900
-categories: ネタ他
-tag: ネタ他 インターネット サーバー
+tag: [other, network]
 ---
 
 # サイト閉鎖の真相

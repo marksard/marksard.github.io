@@ -2,8 +2,7 @@
 layout: post
 title: "マグネットウィンドウの現状"
 date: 2018-04-24 10:00:00 +0900
-categories: マグネットウィンドウ
-tag: マグネットウィンドウ C Windows WindowsAPI
+tag: [magnetwindow, windows, development]
 ---
 
 # 現在のステータス

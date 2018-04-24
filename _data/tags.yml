@@ -4,7 +4,7 @@ magnetwindow:
   name: magnetwindow
 development:
   name: development
-other:
+windows:
   name: windows
 other:
   name: linux

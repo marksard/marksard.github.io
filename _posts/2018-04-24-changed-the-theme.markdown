@@ -6,6 +6,6 @@ tag: [development, network]
 ---
 
 gaclejapanさんのテーマに変更しました。  
-https://github.com/ogaclejapan/materi-for-jekyll  
+[https://github.com/ogaclejapan/materi-for-jekyll](https://github.com/ogaclejapan/materi-for-jekyll)  
 
 ありがたや。  

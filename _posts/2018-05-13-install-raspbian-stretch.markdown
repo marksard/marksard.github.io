@@ -2,7 +2,7 @@
 layout: post
 title: "Raspberry PI 1 model BにRaspbian Stretch入れた"
 date: 2018-05-13 12:00:00 +0900
-tag: [raspberrypi]
+tag: [raspberrypi, linux]
 ---
 
 # 復活

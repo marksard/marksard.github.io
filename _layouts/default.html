@@ -50,7 +50,7 @@
           {% endif %}
 
           {% if site.qiita %}
-          <li><a target="_blank" href="https://qiita.com/photos/{{ site.qiita }}">Qiita</a></li>
+          <li><a target="_blank" href="https://qiita.com/{{ site.qiita }}">Qiita</a></li>
           {% endif %}
 
           {% if site.twitter %}
@@ -78,6 +78,7 @@
         <ul>
           <li><a href="{{ site.baseurl }}/">Home</a></li>
           <li><a href="{{ site.baseurl }}/tags/">Tags</a></li>
+          <li><a href="{{ site.baseurl }}/feed.xml">RSS Feed</a></li>
         </ul>
       </nav>
     </div>

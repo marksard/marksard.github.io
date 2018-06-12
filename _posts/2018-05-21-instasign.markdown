@@ -37,22 +37,20 @@ pythonista3を買って、昨年末くらいに通勤中や勤務中の休憩時
 
 ## 仕上がり例
 
-余白なし仕上げ
+### 余白なし仕上げ
 ![img](/assets/photos/20180521-IMG_7087.jpg)
 
-余白なし仕上げ、縦は4:5に中央をクロップ
+### 余白なし仕上げ、縦は4:5に中央をクロップ
 ![img](/assets/photos/20180521-IMG_7088.jpg)
 
-余白なし仕上げ、Exifの日付付き署名
+### 余白なし仕上げ、Exifの日付付き署名
 ![img](/assets/photos/20180521-IMG_7089.jpg)
 
-
-余白あり仕上げ横
+### 余白あり仕上げ横
 ![img](/assets/photos/20180521-IMG_7091.jpg)
 
-余白あり仕上げ縦
+### 余白あり仕上げ縦
 ![img](/assets/photos/20180521-IMG_7092.jpg)
-
 
 ## アプリ画面
 ![img](/assets/photos/20180515-instasign1.jpg)

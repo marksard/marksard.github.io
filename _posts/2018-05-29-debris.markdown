@@ -5,7 +5,7 @@ date: 2018-05-29 17:00:00 +0900
 tag: [other]
 ---
 
-Internet Archiveに入っている昔の自分のサイトの残骸をメモっておきます。
+Internet Archiveに入っている昔の自分のサイトの残骸をメモっておきます。  
 
-[3rdproject.mine.nu(wayback machine)](https://web.archive.org/web/*/3rdproject.mine.nu)  
-[閲覧可能な最終更新日のもの(wayback machine)](https://web.archive.org/web/20130812021024/http://3rdproject.mine.nu/)  
+* [3rdproject.mine.nu(wayback machine)](https://web.archive.org/web/*/3rdproject.mine.nu)  
+* [閲覧可能な最終更新日のもの(wayback machine)](https://web.archive.org/web/20130812021024/http://3rdproject.mine.nu/)  

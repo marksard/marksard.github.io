@@ -1,4 +1,17 @@
+@font-face {
+    font-family: "lightnovelpop";
+        src: url("https://marksard.github.io/fonts/lightnovelpop.woff")  format('woff');
+}
+@font-face {
+    font-family: "851letrogo_007";
+        src: url("https://marksard.github.io/fonts/851letrogo_007.ttf");
+}
+@font-face {
+    font-family: "Senobi-Gothic-Regular";
+        src: url("https://marksard.github.io/fonts/Senobi-Gothic-Regular.ttf");
+}
+
 //Webfont https://www.google.com/fonts
-$font-family:       'Ubuntu', Arial, Helvetica, sans-serif;
+$font-family:       'Senobi-Gothic-Regular', 'Ubuntu', Arial, Helvetica, sans-serif;
 $variant-family:    'Noto Sans', Arial, Helvetica, sans-serif;
 $code-family:       'Ubuntu Mono', "Courier New", Courier, monospace;

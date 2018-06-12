@@ -26,16 +26,6 @@
     {% else %}
       {% include link_default.html %}
     {% endif %}
-
-    <style type="text/css">
-      @font-face {
-        font-family: "lightnovelpop";
-        src: url("https://marksard.github.io/fonts/lightnovelpop.woff")  format('woff');
-      }
-      .headerspecialfonts {
-        font-family: "lightnovelpop";
-      }
-    </style>
   </head>
 
   <body>
@@ -90,13 +80,20 @@
           <li><a href="{{ site.baseurl }}/feed.xml">RSS Feed</a></li>
         </ul>
       </nav>
+      <nav>
+        <h6>謝辞</h6>
+        <ul>
+          <li style="font-family:'851letrogo_007';"><a href="http://pm85122.onamae.jp/851letrogopage.html">851レトロゴ やごいにーにー</a></li>
+          <li style="font-family:'Senobi-Gothic-Regular';"><a href="http://modi.jpn.org/font_senobi.php">せのびゴシック 倒神神倒</a></li>
+        </ul>
+      </nav>
     </div>
 
     <div class="site-wrapper">
 
       <header>
         <div class="h-wrap">
-          <h1 class="headerspecialfonts title "><a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage">{{ site.name }}</a></h1>
+          <h1 class="title "><a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage">{{ site.name }}</a></h1>
           <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
         </div>
       </header>

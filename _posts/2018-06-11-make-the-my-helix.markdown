@@ -2,7 +2,8 @@
 layout: post
 title: "Helixはいいぞ"
 date: 2018-06-11 13:00:00 +0900
-tag: [other, hardware, keyboard]
+tag: [hardware, keyboard]
+description: "hardware, keyboard"
 image: 20180609-P6090025.jpg
 ---
 

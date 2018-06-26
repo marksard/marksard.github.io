@@ -16,4 +16,7 @@ other:
   name: other
 photographs:
   name: photographs
-  
+hardware:
+  name: hardware
+keyboard:
+  name: keyboard

@@ -2,7 +2,7 @@
 layout: post
 title: "僕の大好きなラズパイ環境壊しちゃった"
 date: 2018-05-11 11:00:00 +0900
-tag: [raspberrypi, linux]
+tag: [raspberrypi, linux, hardware]
 ---
 
 # オーパッキャマラードー パッキャマラードー…

@@ -2,7 +2,7 @@
 layout: post
 title: "HP dv6-7000にmSTAT128GBを追加したはなし"
 date: 2018-06-04 11:00:00 +0900
-tag: [other]
+tag: [other,hardware]
 ---
 
 # 3月にPCを買い替えた

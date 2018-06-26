@@ -2,7 +2,7 @@
 layout: post
 title: "天気予報付き時計"
 date: 2018-05-24 10:00:00 +0900
-tag: [linux,raspberrypi]
+tag: [linux,raspberrypi,hardware]
 ---
 
 # 出来た

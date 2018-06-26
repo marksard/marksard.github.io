@@ -3,6 +3,7 @@ layout: post
 title: "自分のためのInstagram投稿用写真自動整形アプリ"
 date: 2018-05-21 17:00:00 +0900
 tag: [other]
+image: 20180515-instasign1.jpg
 ---
 
 # InstaSign

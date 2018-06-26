@@ -3,6 +3,7 @@ layout: post
 title: "地震と壁面収納"
 date: 2018-06-19 10:00:00 +0900
 tag: [other]
+image: 20180619-APC_0449.jpg
 ---
 
 　![img](/assets/photos/20180619-APC_0449.jpg)  

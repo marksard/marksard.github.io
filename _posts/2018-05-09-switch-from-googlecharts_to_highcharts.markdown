@@ -3,6 +3,7 @@ layout: post
 title: "ラズパイに積んだセンサーや情報ログのグラフ表示をGoogleChartからHighChartに切り替えた"
 date: 2018-05-09 10:00:00 +0900
 tag: [raspberrypi]
+image: 20180508-labtemp2.png
 ---
 
 # ラズパイを使った温湿度時計を置いてます

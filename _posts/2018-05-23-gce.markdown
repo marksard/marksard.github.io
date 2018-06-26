@@ -3,6 +3,7 @@ layout: post
 title: "GCE無料枠運用ちうの物件で中国アクセスによる課金"
 date: 2018-05-23 18:00:00 +0900
 tag: [other, linux]
+image: 20180523-gce.png
 ---
 
 ![img](/assets/photos/20180523-gce.png)

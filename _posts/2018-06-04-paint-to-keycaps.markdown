@@ -2,7 +2,8 @@
 layout: post
 title: "Keycapに色を塗ったりしてみる"
 date: 2018-06-23 11:00:00 +0900
-tag: [other, hardware, keyboard]
+tag: [hardware, keyboard]
+image: 20180623-P6230015.jpg
 ---
 
 ![img](/assets/photos/20180623-P6230015.jpg)

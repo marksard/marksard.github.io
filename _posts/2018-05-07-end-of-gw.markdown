@@ -3,6 +3,7 @@ layout: post
 title: "連休が終わり"
 date: 2018-05-07 15:00:00 +0900
 tag: [other, photographs]
+image: 20180430-P4300008.jpg
 ---
 
 # 連休が終わり

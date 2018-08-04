@@ -3,7 +3,7 @@ layout: post
 title: "コルネキーボードを作りました ～LED取り付けに四苦八苦記～"
 date: 2018-08-04 15:00:00 +0900
 tag: [hardware, keyboard]
-image:20180728-IMGP4314.jpg
+image: 20180728-IMGP4314.jpg
 ---
 
 ![img](/assets/photos/20180728-IMGP4313.jpg)  

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JJ40を作ってみた"
-date: 2018-08-31 11:00:00 +0900
+date: 2018-08-22 11:00:00 +0900
 tag: [hardware, keyboard]
 image: 20180818-P8180032.jpg
 ---

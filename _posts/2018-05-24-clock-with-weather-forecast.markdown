@@ -3,11 +3,11 @@ layout: post
 title: "天気予報付き時計"
 date: 2018-05-24 10:00:00 +0900
 tag: [linux,raspberrypi,hardware]
-image: 20180524-APC_0426.jpg
+image: 20180524-APC_0326.jpg
 ---
 
 # 出来た
-![img](/assets/photos/20180524-APC_0426.jpg)
+![img](/assets/photos/20180524-APC_0326.jpg)
 
 ほぼほぼ設計通りに仕上がりました。  
 ややこしい処理もなかったのでPyQtを直書きしました。ソースは[github](https://github.com/marksard/ClockWithWeatherForecast)に。  

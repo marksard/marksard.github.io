@@ -2,7 +2,7 @@
 layout: post
 title: "指のストロークに合わせてキースイッチを選ぶ"
 date: 2018-09-18 17:00:00 +0900
-tag: [hardware]
+tag: [hardware, keyboard]
 image: 
 ---
 

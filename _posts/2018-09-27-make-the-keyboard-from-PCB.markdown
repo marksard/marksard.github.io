@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “PCBから自作キーボードを作りたい(設計編)”
+title: PCBから自作キーボードを作りたい(設計編)
 date: 2018-09-27 11:00:00 +0900
 tag: [hardware, keyboard, hashtwenty]
 image: 2018-09-27-schematic.png
@@ -53,6 +53,7 @@ image: 2018-09-27-schematic.png
 
 　KiCadというツールを使います。回路図作成、PCB作成、PCB発注用のガーバーデータ作成までデータを連携させて使えます。（これで回路シミュレーターついてたら最強ですが）  
 　まず[KiCadで雑に基板を作るチュートリアル](https://www.slideshare.net/soburi/kicad-53622272)で簡単な回路とPCBを作ってみて、そのあと改めて[KiCad 5.0入門実習テキスト『KiCad Basics for 5.0](https://kosakalab.booth.pm/items/941963)で再学習しました。後者はキーボードショートカットやfreerouterの使い方まで書かれていて即戦力になりました。  
+　それからキースイッチとダイオードの接続や、それらのProMicroへの接続がなぜこうなっているのかはゆかりさんの[オリジナルキーボードを使ってみる](http://eucalyn.hatenadiary.jp/entry/original-keyboard-01)が超良記事ですので目を通しておくと捗ります。
 
 #### 回路図
 

@@ -20,3 +20,5 @@ hardware:
   name: hardware
 keyboard:
   name: keyboard
+hashtwenty:
+  name: hashtwenty

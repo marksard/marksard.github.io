@@ -3,7 +3,7 @@ layout: post
 title: PCBから自作キーボードを作りたい(組み立て編)
 date: 2018-10-11 11:00:00 +0900
 tag: [hardware, keyboard, hashtwenty]
-image: 20181006-PA060003.jpg
+image: 20181009-PA090003.jpg
 ---
 
 # 組み立てて使っていきます

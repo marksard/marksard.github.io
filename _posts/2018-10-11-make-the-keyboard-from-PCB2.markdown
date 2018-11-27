@@ -131,6 +131,9 @@ KiCadで作った基板を開いてツールバーの「ネットのハイライ
 
 　スイッチの光り具合は[こんな感じです](https://twitter.com/marksard/status/1049170753541701632)  
 
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">スイッチテスターモード<br>(froggyの点灯コードを拝借しました😁)<br>カチカチ音や感触に加えて動作点の違いが確認できます😎<a href="https://twitter.com/hashtag/ash2enty?src=hash&amp;ref_src=twsrc%5Etfw">#ash2enty</a> <a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89?src=hash&amp;ref_src=twsrc%5Etfw">#自作キーボード</a> <a href="https://t.co/eit4LDU0gU">pic.twitter.com/eit4LDU0gU</a></p>&mdash; まーく⌨️ (@marksard) <a href="https://twitter.com/marksard/status/1049170753541701632?ref_src=twsrc%5Etfw">2018年10月8日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ![img](/assets/photos/20181007-PA070001.jpg)  
 
 ## 不具合
@@ -208,6 +211,9 @@ uint8_t matrix_master_scan(void) {
 　アクリル側をヘタにいじるとすぐに割れるので観なかったことにしておきます  
 
 ## まとめ
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">〽（庵点） <a href="https://t.co/PNEI7LhmlL">pic.twitter.com/PNEI7LhmlL</a></p>&mdash; まーく⌨️ (@marksard) <a href="https://twitter.com/marksard/status/1031535419983187968?ref_src=twsrc%5Etfw">2018年8月20日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 　[8月中旬あたり](https://twitter.com/marksard/status/1031535419983187968)からなんとなく作ってみたいなと思いはじめて下調べしたりKiCad学習したりしてここまでたどり着きました。とりあえずカタチになって良かったです。  
 　ハードウェア的に修正しないといけない個所は何点かありますが（ベタアースの足りない箇所、配線キレイにしたいetc...）、ここまで出来たらあとは応用だなと感じたのでレイアウトを変えたりキー数を増減したりで楽しめるなと思いました。最初に48キーのものを作りたいと書きましたけど、3Dプリントの筐体作ってエルゴノミックなデザインのものにも興味が…

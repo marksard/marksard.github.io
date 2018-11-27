@@ -119,6 +119,9 @@ image: 20180818-P8180032.jpg
 
 　BACKLIGHT_ENABLE = yesにして、キーマップでのオンオフ機能と[LowerとRaiseキーを押下中のみ明滅（ブレッシング）するように組んでみました。](https://twitter.com/marksard/status/1030739412257107968)  
 
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">バックライトLEDを手書きで(ソフト的に)Breathing点灯させてレイヤー移動中をわかりやすくしてみた。<a href="https://twitter.com/hashtag/jj40?src=hash&amp;ref_src=twsrc%5Etfw">#jj40</a> <a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89?src=hash&amp;ref_src=twsrc%5Etfw">#自作キーボード</a> <a href="https://t.co/wkzfAj1FXj">pic.twitter.com/wkzfAj1FXj</a></p>&mdash; まーく⌨️ (@marksard) <a href="https://twitter.com/marksard/status/1030739412257107968?ref_src=twsrc%5Etfw">2018年8月18日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 # キーマップ
 
 　キーマップはcrkbdで作ったlike_jisの上位互換的なカタチに落ち着きました。crkbdが42キーでJJ40は48キー。crkbdの42キーがギリギリかもと思ってたので余裕があります。crkbdではレイヤ移動したり長押し、同時押しで賄ってるAdjust, Win, Tab, ., ;, :の6キーを前面に出せるだけで結構使い勝手がよくなりました。

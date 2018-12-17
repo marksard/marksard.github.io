@@ -128,3 +128,5 @@ image: 20181103-PB030002.jpg
 　明日はあぷろさんの記事「スプリットスペースバーが最高だと言う事」です！  
 
 　俺たちのENDGAMEへの戦いはこれからだ…！  
+
+（この記事はHelix: switch[KailhPro/Speed&Cherryのリニア/タクタイルMix + tokyo marui lube済] cap:[MDA Big bang]と、Treadstone48: switch[KailhPro/Speedのリニア/タクタイルMix + kylox lube済] cap:[MDA Big bone]の二機種で書きました）  

@@ -3,7 +3,7 @@ layout: post
 title: Treadstone48を作ってみた
 date: 2018-12-17 10:40:00 +0900
 tag: [hardware, keyboard]
-image: 
+image: 20181103-PB030002.jpg
 ---
 
 　この記事は [「自作キーボード Advent Calendar 2018」その１（３まであるよ！）](https://adventar.org/calendars/2954)の１７日目の記事です。  

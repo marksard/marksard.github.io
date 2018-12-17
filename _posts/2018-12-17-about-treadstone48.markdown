@@ -2,7 +2,7 @@
 layout: post
 title: Treadstone48を作ってみた
 date: 2018-12-17 10:40:00 +0900
-tag: [hardware, keyboard]
+tag: [hardware, keyboard, treadstone48]
 image: 20181103-PB030002.jpg
 ---
 

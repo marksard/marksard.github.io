@@ -1,9 +1,9 @@
 ---
 layout: post
-title: grabbag
+title: grabbagでキーセットを作る
 date: 2019-01-02 12:00:00 +0900
 tag: [hardware, keyboard]
-image: 
+image: 20190102-P1020003.jpg
 ---
 
 # grabbagでキーセットを作る

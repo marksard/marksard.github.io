@@ -13,6 +13,10 @@ image: 20190109-P1090046.jpg
 # 参考ビルドログ
 
 　同じ時期に購入したサリチル酸さんの記事がとても参考になります。特に配線回りの図はお世話になりました。  
+[Colosseum44のビルドログ（準備～塗装編)](https://salicylic-acid3.hatenablog.com/entry/colosseum44-build-log-part1)  
+[Colosseum44のビルドログ（組み立て編)](https://salicylic-acid3.hatenablog.com/entry/colosseum44-build-log-part2)  
+[自作キーボード「Colosseum44」のレビュー](https://salicylic-acid3.hatenablog.com/entry/colosseum44-review)  
+
 　私のほうは組み立て画像中心にお届けします。  
 
 ## 塗装

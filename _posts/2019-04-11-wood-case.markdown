@@ -24,7 +24,7 @@ image: 20190402-P4020045.jpg
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">削り出しで40分くらいかかってた <a href="https://t.co/CtM8wRCxYy">pic.twitter.com/CtM8wRCxYy</a></p>&mdash; ⌨️まーご⌨️(仮の姿) (@marksard) <a href="https://twitter.com/marksard/status/1086567079908540416?ref_src=twsrc%5Etfw">2019年1月19日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-　削る音は中々すさまじかったですけど、飽きずに眺めてました。  
+　削る音は中々すさまじかったですけど飽きずに眺めてました。カバ桜の無垢材が丁度良い大きさ（500mm x 90mm x 20mmくらい）のが売ってたのでそれを使用しました。  
 
 　CNCでの切削が完了したあと併設されている工作スペースで表面を仕上げたり、設計ミス部分を補正したりしました。カンナや鉄やすりにボール盤などを借りたり、また紙やすりなどを購入して表面を綺麗に加工して帰ってきました。  
 

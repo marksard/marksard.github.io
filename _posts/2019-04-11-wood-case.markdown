@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ウッディなケースはいいぞ
+title: ウッディなケースはめっさいいぞ
 date: 2019-04-11 18:00:00 +0900
 tag: [hardware, keyboard]
 image: 20190402-P4020045.jpg
@@ -14,7 +14,7 @@ image: 20190402-P4020045.jpg
 
 ## Treadstone48の無垢材CNC削りだしウッドケース
 
-　カインズホームというホームセンターの一部店舗で[カインズ工房](https://www.cainz.co.jp/diy_style/factory/tool.html)てのがあって、さらにその一部？にはSHOPBOTというCNCルーターがあって、データを用意すればガガガっと自動で木材を削ってくれます。ネット探すと1個から個人でも受注してくれるサービスはあったりしますが、やっぱり実際に削っているところが観たかったのでチャレンジしました。  
+　カインズホームというホームセンターの一部店舗で[カインズ工房](https://www.cainz.co.jp/diy_style/factory/tool.html)ってのがあって、さらにその一部？にはSHOPBOTというCNCルーターがあって、データを用意すればガガガっと自動で木材を削ってくれます。ネット探すと1個から個人でも受注してくれるサービスはあったりしますが、実際に削っているところが観たかったのでチャレンジしました。  
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ボトムケースの面取りなくして、オフセット、押し出し、シェルコマンドしただけなんだけど寸法とかもろもろめっちゃ時間かかった…<br>2cmのパイン集成材をCNCで切削させようと思うんだけど、どれくらいかかんだろ…キレイに出来るんだろうか…その辺相談するためのデータ <a href="https://t.co/tsysfoYEfX">pic.twitter.com/tsysfoYEfX</a></p>&mdash; ⌨️まーご⌨️(仮の姿) (@marksard) <a href="https://twitter.com/marksard/status/1078298013540335616?ref_src=twsrc%5Etfw">2018年12月27日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

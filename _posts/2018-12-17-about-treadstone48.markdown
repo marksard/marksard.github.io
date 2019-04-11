@@ -18,31 +18,31 @@ image: 20181103-PB030002.jpg
 ## 1.25U～2.25Uのキーキャップって、実はカッコいいのでは
 
 　元々無刻印派だった私がHelixを作って刻印派に宗旨替え、続いてcrkbd、JJ40、25キーテンキーパッドに40キー分割型試作キーボードと立て続けに作ってると、キーキャップが全然足りなくなります。そのたびキーキャップを買っていましたが、レジェンド（文字）のある1Uのキーキャップはそれほど選択肢がないこと、デザインやカラーを選ぶとお財布にまったくやさしくないという現実に直面します。妥協してAliなどでANSI104に1Uのノベルティキーキャップ（アイコン・ロゴなどが刻印されている）を追加して買ったりもしましたけど、それでもやっぱり選択肢は少ないです。  
-　そんな感じであーでもないこーでもないとキーキャップを探す旅を続けてましたが、ついにGMK LaserのCyberDeck(ANSI104セット)とノベルティセットを召喚しました。もちろん手持ちのHelixやJJ40やcrkbdに付けてそのカッコよさに惚れ惚れしましたが、余った1.25U～2.25Uもそのシャープな造形と色、デザインがカッコよくこれを使わないのはモッタイナイ！と思ったのでちょっと試しにレイアウトを作ってみることにしました。  
-　最初は文字キーはOrtholinearのままで、最低限欲しいモデファイアキーを並べて…とすると、こうなりました。  
+　そんな感じであーでもないこーでもないとキーキャップを探す旅を続けてましたが、ある日ついにGMK LaserのCyberDeck(ANSI104セット)とノベルティセットを買ってしまいました。手持ちのHelixやJJ40やcrkbdに付けてそのカッコよさに惚れ惚れしましたが、余った1.25U～2.25Uもそのシャープな造形と色やデザインがカッコよくこれを使わないのはモッタイナイ！と思い、Ortholinearで最低限欲しいモデファイアキーを並べてみると…  
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ortholinearで104keyキーキャップを使いたいの図 <a href="https://t.co/cbj60hAuHc">pic.twitter.com/cbj60hAuHc</a></p>&mdash; まーく⌨️ (@marksard) <a href="https://twitter.com/marksard/status/1051682202709180416?ref_src=twsrc%5Etfw">2018年10月15日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-　うん、あまりカッコいいものではない…なにかもうちょっと工夫してキレイにおさめたい…  
-　ここでふと以前から少し考えていたことがふと頭をよぎりました。  
+　あまりカッコいいものではない…なにかもうちょっと工夫してキレイにおさめたい…  
+　ここでふと以前から少し考えていたことが頭をよぎりました。  
 
 ## キーボードの押しにくいキー、押しやすいキー
 
-　一般的なキーボードの配列はタイプライターを起源とする、左上起点とすると右に0.25Uとか0.5Uずつずれた配置になっています。Row Staggered（斜交配列）と呼ばれていますが打鍵していると、  
+　一般的なキーボードの配列はタイプライターを起源とする、左上起点とすると右に0.25U、0.5Uずつずれた配置になっています。これはRow Staggered（斜交配列）と呼ばれていますが打鍵してみると…  
 
 「BとYが打ちにくい、でもTとNは打ちやすい」  
 
-という横にズレているゆえの打鍵感の違いがあります。Ortholinearだとそれが平均化しますがTとNは少し遠くなったように感じます。これも解消するとなるとTとBをFキーに、YとNをJキーにOrtholinearからさらに近づける配列が良いのではないか？という案をふと思ったわけです。  
+といったように、右方向にずれているためホームポジションからの移動の量が違うので打ちやすさに差が出来てしまっています。Ortholinearだとそれが平均化しますが、逆に今度はTとNが少し遠くなったように感じます。Column Staggeredの場合は別の問題として小指の指の長さの影響の方が大きくなってホームポジションに置く際の指の曲げ具合が神経質になりやすいです。  
+　なので、単純にOrtholinearをベースにTとBをFキーに、YとNをJキーに近づけた配列が良いのではないか？という案を考えていたのです。  
 
 ## あわせてみた
 
-　とりあえず文字キー列を真ん中がX字に開くようにずらして配置して文字キーを並べて、ANSI104のモデファイアキーを並べてみたのがこちら。  
+　ということで、OrtholinearをベースにTとBをFキーに、YとNをJキーに近づけて配置し、最低限欲しいもでファイアキーをANSI104のサイズで並べてみたのがこちら。  
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">指の長さの差分を抑えるために少し曲げて内側に寝かせて手を置くと思うんだけど、そう考えると実はこういうrowstaggerdのが良いんじゃないかと考えた。<br>ANSI104のキーキャップがそのまま使えるようにしたのもトピック <a href="https://t.co/LGPNKx6RxK">pic.twitter.com/LGPNKx6RxK</a></p>&mdash; まーく⌨️ (@marksard) <a href="https://twitter.com/marksard/status/1052130250253987841?ref_src=twsrc%5Etfw">2018年10月16日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-　これをさらにキーキャップのスカルプチャ系のプロファイルのRowも考慮して…  
+　キーキャップのプロファイルによってはRowの高さが変わるので、それも考慮して配置を最適化…  
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">この前出してたやつはキャップのRを考えると良くないのでRを加味してリファイン<br>左上のスペースにpromicro置くイメージ（あくまでイメージ）<br>結構長いしPCBのお値段やいかに。。。 <a href="https://t.co/HWsEenUeME">pic.twitter.com/HWsEenUeME</a></p>&mdash; まーく⌨️ (@marksard) <a href="https://twitter.com/marksard/status/1052808227044216832?ref_src=twsrc%5Etfw">2018年10月18日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -61,14 +61,14 @@ image: 20181103-PB030002.jpg
 
 　ざっと仕様を。  
 
-* X Row-Stagegrd 47 or 48keys
+* Irregular Row Stagegrd 47 or 48keys
 * Supports ANSI104 Keycaps
 * Supports Cherry MX swithes or compatibe switches.
 * Supports Kailh MX keyswitch sockets
 * Supports Underglow LEDs
 * Supports extension keypad (Rhymestone connected as numpad and dual use)
 
-　トピックは誰も（？）やろうとしないような配列と1Uキーキャップからの脱却です。Taihaoのカラフルでダブルショットでお安いものやFilco、Archisiteなどで販売しているキーキャップなどもモデファイアキーを気兼ねなく使えるのでキーキャップを使える範囲はぐっと広くなります。それでいてOrtholinearに近い使い心地です。  
+　コンセプトはこれまでに書いたANSI104モデファイアキーへの自然な対応と、新たな配列の提案です。Taihaoのカラフルでダブルショットでお安いものやFilco、Archisiteなどで販売しているキーキャップなどもモデファイアキーを気兼ねなく使えるのでキーキャップを使える範囲はぐっと広くなります。それでいてOrtholinearに近い使い心地です。  
 　Kailh MXソケットに対応しておくと、スイッチを交換したり、lubeしたり、PCBとトッププレートをバラせるのも利点。  
 　UnderGrowのみでスイッチ毎のLEDに対応しなかったのは、自分が普段透過型のキーキャップを使わないため、UnderGrowで3mmのアクリルクリアのボトムプレートの淵を光らせているほうがよりカッコいいのではないかという意図からです。  
 　あと拡張で4x5の格子配列のRhymestoneを繋いでUSBポートを塞ぐことなくキーパッドとして使えるようにしてみました。  
@@ -107,7 +107,7 @@ image: 20181103-PB030002.jpg
 
 ### 配列について
 
-　私個人は長身で手が大きいと思うので参考にはなりにくいかもしれませんが、文字キーを打つ限りはほぼほぼ手首を机に置きっぱなしで打鍵できます。一体型Ortholinearキーボードで感じた窮屈感もなく、型と肘の位置は普通のTKL（テンキーレス）キーボードと同じ感覚かそれより少しゆったり出来るかなといった具合。  
+　私個人は長身で手が大きいと思うので参考にはなりにくいかもしれませんが、文字キーを打つ限りはほぼほぼ手首を机に置きっぱなしで打鍵できます。一体型Ortholinearキーボードで感じた窮屈感もなく、型と肘の位置は普通のTKL（テンキーレス）キーボードのそれより少しゆったり出来るかなといった具合です。  
 　強いて言えば通常のANSI104キーと比較してShiftキーの位置が1U左に移動しているので、手の大きい私でもShift+Tの打鍵時は少し遠いかなと感じます。ただこの辺はスペースバーにShift機能を兼務させたり、右Shiftキーを矢印キーあたりで兼務させると良い感じになるのではと思います。  
 
 ## まとめ

@@ -42,12 +42,14 @@ Kailh Speed Heavy Dark Yellowをメインに、Kailh Pro Burgundyを指の力が
 　デフォルトキーマップが既に入っていますし、[The Van Keyboardのキーマップエディタ](http://qmk.thevankeyboards.com/)でMiniVanを選択すれば自分で好きなキーマップを作成したり、LEDのインジケータの動作も設定することが出来ます。  
 　PCB自体はMiniVanでQMK readyなので、私はにQMKにあるMiniVanをベースに作成したものを使っています。  
 
-　キーマップは[こんなな感じです](https://github.com/qmk/qmk_firmware/tree/master/keyboards/thevankeyboards/minivan/keymaps/like_jis)。もともと凸タイプの矢印キーがないと嫌マンだったのでRhymestoneやTreadstone48までは頑なに凸矢印キーをデフォルトマップにいれたり物理配置させてましたが、30%キーボードのキーマップでHJKLを別レイヤーに矢印キーを押し込んで使っているウチに慣れてむしろそちらのほうが楽でイイかもと思ったのと、デフォルトレイヤーにスラッシュとバックスラッシュがあると普段の作業にやはり都合がいいのもあり、Treadstone32のキーマップをベースに、モデファイアキー系を独立させたキーマップになりました。  
+　キーマップは[こんな感じです](https://github.com/qmk/qmk_firmware/tree/master/keyboards/thevankeyboards/minivan/keymaps/like_jis)  
+　もともと凸タイプの矢印キーがないと嫌マンだったのでRhymestoneやTreadstone48までは頑なに凸矢印キーをデフォルトマップにいれたり物理配置させてましたが、30%キーボードのキーマップでHJKL位置の別レイヤーに矢印キーを割り当てて使っているウチに慣れました。むしろそちらのほうがホームポジションから動かなくてイイのでTreadstone32のキーマップをベースに、モデファイアキー系を独立させたキーマップになりました。  
 
 ## レビュー：久しぶりのRowStaggered
 
-　FILCO MajestouchのTKLから乗換で自作キーボードにデビューしてるのですが、HelixでOrtholinear配列に慣れ、crkbdでColumnStaggered配列に慣れ、IrregularRowStaggeredという変則配列なTreadstoneシリーズを製作してそれにも慣れ…3Dプリンタのcolloseum44キーボードにも慣れ…と色んな物理配列に慣れてRowStaggeredキーボードに一年ぶりに戻ってきました。  
-　よくOrtholinear始め特定の配列のキーボードに移行してしまうと普通のキーボードが触れなくなる、という事をよく言われますし私もそう思ってた頃があったんですが、最近は「朝指がリセットされるので最初に触ったキーボードの物理配列で運指をキャリブレーションするとそれがその日一番なじむ」  
+　FILCO MajestouchのTKLから乗換で自作キーボードにデビューしてるのですが、HelixでOrtholinear配列に慣れ、crkbdでColumnStaggered配列に慣れ、IrregularRowStaggeredという変則配列なTreadstoneシリーズを製作してそれにも慣れ、3Dプリンタのcolloseum44キーボードにも慣れ…と色んな物理配列に慣れてRowStaggeredキーボードに一年ぶりに戻ってきました。  
+　よくOrtholinear始め特定の配列のキーボードに移行してしまうと普通のキーボードが触れなくなる、という事をよく言われますし私もそう思ってた頃があったんですが、最近は  
+「朝指がリセットされるので最初に触ったキーボードの物理配列で運指をキャリブレーションするとそれがその日一番なじむ」  
 という体質になってきて割と何でも打てるようになるという感じデス。  
 
 - 私のメインマシンがノートPCで持ち運び先で時々RowStaggeredに触れることがある
@@ -67,7 +69,7 @@ Kailh Speed Heavy Dark Yellowをメインに、Kailh Pro Burgundyを指の力が
 
 ## 未開封なのが…
 
-　キーキャップと、ホルスターケース。開けようかどうか迷っている…  
+　キーキャップと、ホルスターケース。開けようかどうか迷ってます…  
 
 ## （おまけ）フルカラーLEDインジケーターのピンについて
 

@@ -19,9 +19,10 @@ image: 20190211-P2110287.jpg
 ```c
 config.h
 #define TAPPING_TERM 200         // 長押しと単押しの判定時間の調整（ダブルタップ判定時間でもある）
-#define PREVENT_STUCK_MODIFIERS  // 長押しモデファイア認識中のレイヤー移動時にロックされる問題を回避
 #define IGNORE_MOD_TAP_INTERRUPT // Modtapキー打鍵後の次のキーのReleaseの順番によってModキー判定されないようにする
 ```
+
+※2019/05/21 以前はこの記事で```#define PREVENT_STUCK_MODIFIERS```を記述していましたが、```#define PREVENT_STUCK_MODIFIERS```のマクロあり状態がデフォルトとなり、このマクロは削除されたようです。  
 
 　この辺の調整は個人差がありますけどModTap機能を使っているキーを含めてダダダっと打鍵したときに誤作動しないようにする設定です。これをしないと誤打鍵がひどくてショートカットキーを打ったと判断されて画面がすっ飛んだりします。  
 　またレイヤーキーも問題があります。レイヤーにもLayerTapという機能があって文字キーに割り当てることは出来るのですが、ModTapとは動作が少し変わるらしく上記の設定が利かず、QMKのコアをいじらないとすぐ別レイヤーのキーを打鍵してしまうなどの誤爆が多くなります。  
@@ -53,7 +54,10 @@ config.h
 
 　30キーしかないし、複雑な手順もないのでサクッと組みあがりました。  
 
-　基板は赤色にしてみました。裏面の文字はプログラミング言語の英語ジョークから（C言語）  
+　基板は赤色にしてみました。裏面の「自分の足を撃て」。プログラミング言語の英語ジョークから（C言語）ですが、個人的に好きなので時々思い出しては観に行きます(笑)  
+[コンピュータジョーク](http://hp.vector.co.jp/authors/VA000092/jokes/)  
+[Shooting yourself in the foot in various programming languages](http://www.toodarkpark.org/computers/humor/shoot-self-in-foot.html)  
+
 ![img](/assets/photos/20190202-P2020237.jpg)  
 ![img](/assets/photos/20190202-P2020238.jpg)  
 

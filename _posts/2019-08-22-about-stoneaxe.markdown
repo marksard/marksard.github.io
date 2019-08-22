@@ -1,7 +1,7 @@
 ---
 layout: post
 title: StoneAxe - 名刺基板の供養 -
-date: 2019-05-22 15:00:00 +0900
+date: 2019-08-22 15:00:00 +0900
 tag: [hardware, keyboard]
 image: 20190822-P8220031.jpg
 ---

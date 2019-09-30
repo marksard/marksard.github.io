@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 推しのスイッチとカスタム
-date: 2019-09-30 17:45:00 +0900
+date: 2019-09-30 15:00:00 +0900
 tag: [hardware, keyboard]
 image:
 ---

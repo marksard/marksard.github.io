@@ -82,7 +82,7 @@ image: 20181103-PB030002.jpg
 　ANSI104のモデファイアがほぼキレイに収まります。  
 　※一部の写真は試作機のものもあります。
 
-"GMK CyberDeck（Cherryプロファイル）"
+"GMK Laser（Cherryプロファイル）"
 ![img](/assets/photos/20181103-PB030002.jpg)
 
 "FILCO Majestouch専用104英語配列・2色成型カスタムキーキャップセット紺/白（SAプロファイル）"

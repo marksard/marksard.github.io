@@ -1,9 +1,9 @@
 ---
 layout: post
-title: via対応やってみました
+title: VIA対応やってみました
 date: 2020-07-26 10:00:00 +0900
 tag: [hardware, keyboard]
-image: 
+image: via_rs_01.jpg
 ---
 
 ## VIAってなに？

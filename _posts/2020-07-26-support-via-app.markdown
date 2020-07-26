@@ -50,11 +50,16 @@ image: via_rs_01.jpg
 
 ![img](/assets/photos/via_rs_01.jpg)  
 
-### Treadstone48 rev2
+### Treadstone48
 
-とりあえずrev2だけ。rev1とrev2を一つにまとめられそうになさそうなので、rev1が欲しい場合はtwitterにリプください。  
-
+<strike>とりあえずrev2だけ。rev1とrev2を一つにまとめられそうになさそうなので、rev1が欲しい場合はtwitterにリプください。  
 [Treadstone48 hex and json](https://drive.google.com/file/d/1yepdyliOKARiSLDqLJn1XScemyemXTvA/view?usp=sharing)  
+</strike>
+
+rev1の対応をしました。スプリットバックスペースも対応(rhymestone連携機能の実装は大変なのでオミットしました)  
+rev1と2はhexファイルが別なので注意してください。jsonファイルは共通です。
+
+[Treadstone48 rev1/2 hex and json](https://drive.google.com/file/d/1jdoCQLfoI14WW8tZAV0a1wU9gticOUn_/view?usp=sharing)  
 
 ![img](/assets/photos/via_ts48r2_01.jpg)  
 

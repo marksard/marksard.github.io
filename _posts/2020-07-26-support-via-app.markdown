@@ -54,12 +54,17 @@ image: via_rs_01.jpg
 
 <strike>とりあえずrev2だけ。rev1とrev2を一つにまとめられそうになさそうなので、rev1が欲しい場合はtwitterにリプください。  
 [Treadstone48 hex and json](https://drive.google.com/file/d/1yepdyliOKARiSLDqLJn1XScemyemXTvA/view?usp=sharing)  
-</strike>
 
 rev1の対応をしました。スプリットバックスペースも対応(rhymestone連携機能の実装は大変なのでオミットしました)  
 rev1と2はhexファイルが別なので注意してください。jsonファイルは共通です。
+</strike>
 
-[Treadstone48 rev1/2 hex and json](https://drive.google.com/file/d/1jdoCQLfoI14WW8tZAV0a1wU9gticOUn_/view?usp=sharing)  
+**2020/07/28修正**  
+rev1に関してはやはりちゃんとjson側も対応が必要なようで作成しなおしました。  
+rev1所有者がもし以前のバージョンをDLしているひとはDLしなおし、rev1のファームを書き直し、rev1用jsonを読み込んで使用してください。  
+zip内のテキストもよくお読みください。  
+
+[Treadstone48 rev1/2 hex and json](https://drive.google.com/file/d/1SjPfF1Zn62hrh-4dlqDhBi2JojINiZj5/view?usp=sharing)  
 
 ![img](/assets/photos/via_ts48r2_01.jpg)  
 

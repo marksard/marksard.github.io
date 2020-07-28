@@ -6,6 +6,11 @@ tag: [hardware, keyboard]
 image: via_rs_01.jpg
 ---
 
+## おしらせ
+
+2020/07/28 TS32, TS60の一部キーが認識しないjsonファイルの問題を修正しました。また、TS48はrev1に対応しました。  
+不具合があればtwitterにておしらせくださいませ。  
+
 ## VIAってなに？
 
 　QMK対応キーボードのキーマップを書き換えるアプリケーションです。  
@@ -54,9 +59,6 @@ image: via_rs_01.jpg
 
 <strike>とりあえずrev2だけ。rev1とrev2を一つにまとめられそうになさそうなので、rev1が欲しい場合はtwitterにリプください。  
 [Treadstone48 hex and json](https://drive.google.com/file/d/1yepdyliOKARiSLDqLJn1XScemyemXTvA/view?usp=sharing)  
-
-rev1の対応をしました。スプリットバックスペースも対応(rhymestone連携機能の実装は大変なのでオミットしました)  
-rev1と2はhexファイルが別なので注意してください。jsonファイルは共通です。
 </strike>
 
 **2020/07/28修正**  
@@ -71,6 +73,8 @@ zip内のテキストもよくお読みください。
 ### Treadstone32 / 32lite
 
 32と32liteはhexファイルが別なので注意してください。jsonファイルは共通です。  
+**2020/07/28修正**  
+一部キーが効かないため、jsonファイルを修正しました。  
 
 [Treadstone32 hex and json](https://drive.google.com/file/d/18WXRdKAcKxy4h4aVAJUJYI28Z0Z8kbxn/view?usp=sharing)  
 
@@ -80,6 +84,8 @@ zip内のテキストもよくお読みください。
 
 次版のγにも対応しています。  
 α版は選ばれしもののみへの頒布だったので対応見送ろうかと思っていますが、欲しい場合はtwitterにリプください。  
+**2020/07/28修正**  
+一部のキーが効かなかったため、jsonファイルを修正しました。
 
 [Treadstone60β hex and json](https://drive.google.com/file/d/1JeW5edUm1cAlcQXy9B9frmpbzyPHl0y5/view?usp=sharing)  
 

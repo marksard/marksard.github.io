@@ -17,6 +17,9 @@ image: via_rs_01.jpg
 - Rhymestoneのキーマップを最新にアップデートしました
 - Leftover30のVIAを追加しました
 
+2020/11/13  
+ファイルをgithubに一括配置するように変更しました。  
+
 ## VIAってなに？
 
 　QMK対応キーボードのキーマップを書き換えるアプリケーションです。  
@@ -50,62 +53,31 @@ image: via_rs_01.jpg
 
 ## 対応リスト
 
-　とりあえず過去に頒布した実績がありかつ最新のリビジョンのものは対応してみました。キーマップは最近自分が使っているdefault(US配列)ベースにちょっとカスタムしているものになります。  
-　とりあえずなのでファイルは期間限定です。リンク先が無くなってたらそういうことです。  
+[ファームウェア置き場（VIA用はインポート用JSONファイル同梱）](https://github.com/marksard/qmk_firmware_hex/releases/tag/release-20201112)
+
+- Rhymestone
+- Treadstone32 rev1/lite
+- Treadstone48 rev1/rev2
+- Treadstone60 β/γ
+- Leftover30
 
 ### Rhymestone
-
-最近コードを書き直したりPRしたり写真撮ったりと、ちょっと見直してきているのもあって対応しました。再販は考えてませんが、海外を探すと売ってたりします（敢えてURLは載せませんので探してみてください）。  
-**2020/09/10修正**  
-中身は変わっていませんがQMK本体にマージしたdefaultキーマップを適用してhexファイルを作り直しました。  
-
-[Rhymestone hex and json](https://drive.google.com/file/d/1mWxFfMBXfMIeIO63UFZAvbzZFwOLTGM5/view?usp=sharing)  
 
 ![img](/assets/photos/via_rs_01.jpg)  
 
 ### Treadstone48
 
-<strike>とりあえずrev2だけ。rev1とrev2を一つにまとめられそうになさそうなので、rev1が欲しい場合はtwitterにリプください。  
-[Treadstone48 hex and json](https://drive.google.com/file/d/1yepdyliOKARiSLDqLJn1XScemyemXTvA/view?usp=sharing)  
-</strike>
-
-**2020/07/28修正**  
-rev1に関してはやはりちゃんとjson側も対応が必要なようで作成しなおしました。  
-rev1所有者がもし以前のバージョンをDLしているひとはDLしなおし、rev1のファームを書き直し、rev1用jsonを読み込んで使用してください。  
-zip内のテキストもよくお読みください。  
-
-[Treadstone48 rev1/2 hex and json](https://drive.google.com/file/d/1SjPfF1Zn62hrh-4dlqDhBi2JojINiZj5/view?usp=sharing)  
-
 ![img](/assets/photos/via_ts48r2_01.jpg)  
 
 ### Treadstone32 / 32lite
-
-32と32liteはhexファイルが別なので注意してください。jsonファイルは共通です。  
-**2020/07/28修正**  
-一部キーが効かないため、jsonファイルを修正しました。  
-
-[Treadstone32 hex and json](https://drive.google.com/file/d/18WXRdKAcKxy4h4aVAJUJYI28Z0Z8kbxn/view?usp=sharing)  
 
 ![img](/assets/photos/via_ts32_01.jpg)  
 
 ### Treadstone60β/γ
 
-α版はレイアウトは違うものの動作はするかと思います。
-**2020/07/28修正**  
-一部のキーが効かなかったため、jsonファイルを修正しました。  
-**2020/09/10修正**  
-空白のレイヤ層を増やして表示がおかしいの修正しました。  
-
-[Treadstone60β hex and json](https://drive.google.com/file/d/1JeW5edUm1cAlcQXy9B9frmpbzyPHl0y5/view?usp=sharing)  
-
 ![img](/assets/photos/via_ts60_01.jpg)  
 
 ### Leftover30
-
-QMKにマージしたdefaultを適用しています。  
-QMK Configuratorでは現状ではロータリーエンコーダーが効かなくなってしまうのですが、VIAの方はデフォルトのプログラムで動作します（動作のカスタマイズは出来ません）。  
-
-[Leftover30 hex and json](https://drive.google.com/file/d/1V-Eqp08cPe4KrC_mvXAuQMPM8Bmn9xCL/view?usp=sharing)  
 
 ![img](/assets/photos/via_leftover30_01.jpg)  
 

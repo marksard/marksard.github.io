@@ -20,6 +20,9 @@ image: via_rs_01.jpg
 2020/11/13  
 ファイルをgithubに一括配置するように変更しました。  
 
+2020/11/25  
+Treadstone60αに対応しました。  
+
 ## VIAってなに？
 
 　QMK対応キーボードのキーマップを書き換えるアプリケーションです。  
@@ -53,12 +56,12 @@ image: via_rs_01.jpg
 
 ## 対応リスト
 
-[ファームウェア置き場（VIA用はインポート用JSONファイル同梱）](https://github.com/marksard/qmk_firmware_hex/releases/tag/release-20201112)
+[ファームウェア置き場（VIA用はインポート用JSONファイル同梱）](https://github.com/marksard/qmk_firmware_hex/releases)
 
 - Rhymestone
 - Treadstone32 rev1/lite
 - Treadstone48 rev1/rev2
-- Treadstone60 β/γ
+- Treadstone60 α/β/γ
 - Leftover30
 
 ### Rhymestone
@@ -73,7 +76,9 @@ image: via_rs_01.jpg
 
 ![img](/assets/photos/via_ts32_01.jpg)  
 
-### Treadstone60β/γ
+### Treadstone60α/β/γ
+
+α版はmarksard_treadstone60_alpha_via.jsonを、それ以外はmarksard_treadstone60_via.jsonをお使いください。hexファイルは共通です。  
 
 ![img](/assets/photos/via_ts60_01.jpg)  
 

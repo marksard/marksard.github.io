@@ -38,7 +38,10 @@ image: 20200821-IMGP5962.jpg
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ｵｯと思ったけと、鋳造/削り出しあたりの話だなと理解してそっ閉じ。 <a href="https://t.co/NL6Ic8qXHX">pic.twitter.com/NL6Ic8qXHX</a></p>&mdash; y＠hewi (@yohewi) <a href="https://twitter.com/yohewi/status/1284986704714035204?ref_src=twsrc%5Etfw">July 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-自キ界隈では以前より3Dプリンタで数々のモバイルケースを製作されてる（過去にTreadstone32の蓋付きモバイルケースを作製いただきました。2020年の自キカレンダー９月に掲載されてます）沼人の会主催者のyohewiさんに興味を示してもらえたので相談することに。  
+自キ界隈では以前より3Dプリンタで数々のモバイルケースを製作されてる（過去にTreadstone32の蓋付きモバイルケースなどを作製いただきました。2020年の自キカレンダー９月にも載っています）沼人の会主催者のyohewiさんに興味を示してもらえたので相談することに。  
+
+Treadstone32のモバイルケース  
+![img](/assets/photos/20191022-PA220040.jpg)  
 
 ## ケースの依頼、開発グループ発足…そしてわいわい
 

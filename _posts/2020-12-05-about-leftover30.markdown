@@ -16,7 +16,7 @@ image: 20200821-IMGP5962.jpg
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">スタビ穴なんか行けそうなのでもう少しレイアウトを詰めてみた。<br>これ中々バランスよくていいんじゃないかな。<br>ただね、これ小さくないんよね…幅が0.75U小さくなったMiniVanなんだよね… <a href="https://t.co/o0resfmnUV">pic.twitter.com/o0resfmnUV</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1153305394233483264?ref_src=twsrc%5Etfw">July 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-　この頃KUMO(MiniVan)を使って意外とRowStaggeredでも叩けるなと気付きがあったり、でもNOMU30はちょっと厳しい（スペースだけは親指が良いかな派）ので、RowStageredでちょっと作ってみたかった。
+　この頃KUMO(MiniVan)を使って意外とRowStaggeredでも叩けるなと気付きがあったり、でもNOMU30はちょっと厳しい（スペースだけは親指が良いかな派）ので、RowStageredでちょっと作ってみたかった。  
 　サリチルさんとロングスペースバーいいよねとあれこれ話してたのですが、この配列でグッとくる要素がなかったこと、この時はレクタンな形状にこだわっていたこと、あまり小さくないからこれならKUMO(MiniVan)で良いかとなって一旦終了。  
 
 ## 今年の同じ時期

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 独自変態配列省スペースキーボード開発者が変態配列省スペースキーボードを開発した話（LEFTOVER30）
-date: 2020-12-06 23:00:00 +0900
+date: 2020-12-05 23:00:00 +0900
 tag: [hardware, keyboard]
 image: 20200821-IMGP5962.jpg
 ---

@@ -8,9 +8,9 @@ image: 20201205-PC050044.jpg
 
 ## アルミトレイケースの不快な音を除去して「整音化」する
 
-　この記事は[キーボード #1 Advent Calendar 2020](https://adventar.org/calendars/5279)の9日目の記事です。  
+　この記事は[キーボード #1 Advent Calendar 2020](https://adventar.org/calendars/5279)の9日目の記事です。８日目の記事は[もんくさん（@monksoffunkJP）](https://twitter.com/monksoffunkJP)の[自作キーボード界隈という世界の奥行き](http://www.sho-k.co.uk/tech/2280.html)でした。  
 
-　いつでも購入出来る60%サイズのアルミ製のトレイマウントケース。私は[KBDFANS TOFU](https://kbdfans.com/collections/60-layout-case/products/kbdfans-tofu-60-aluminum-case)と[KBDFANS 5deg](https://kbdfans.com/collections/60-layout-case/products/pre-orderkbdfans-5-60-case)を買って、拙作のTreadstone配列の60%PCBを入れて愛用しています。  
+　さて、いつでも購入出来る60%サイズのアルミ製のトレイマウントケース。私は[KBDFANS TOFU](https://kbdfans.com/collections/60-layout-case/products/kbdfans-tofu-60-aluminum-case)と[KBDFANS 5deg](https://kbdfans.com/collections/60-layout-case/products/pre-orderkbdfans-5-60-case)を買って、拙作のTreadstone配列の60%PCBを入れて愛用しています。  
 　このアルミ製のトレイマウントケースで気になるのが打鍵時にアルミケースから発せられていると思しき不快な音。底打ちの打鍵をすると「コォンコォン」「カァンカァン」と気になる音が鳴ります。またネジを受け止めるポスト近辺から離れるにつれて打鍵音の音の高さや底打ちの固さも変わったりして、GroupBuyで販売されているような高級キーボードがみなトップマウントやガスケットマウントなど、マウントにこだわっている所以でもあったりします。  
 
 　私もPolarisやEquinox、VISIONなど音質やマウント方法にこだわったキーボードを買って使っているのですが、お手頃なトレイマウントでもお手軽な改造で良い音させたい！打鍵感を向上させたい！！と試行錯誤しておりました。  
@@ -124,3 +124,5 @@ KBDfans module foamは[KBDFans](https://kbdfans.com/products/kbdfans-module-foam
 中：Treadstone60βPCB/FR4プレート/Gatelon Ink Black  
 右：Treadstone60γPCB/FR4プレート/Diamond Starstone  
 ![img](/assets/photos/20201205-PC050054.jpg)  
+
+この記事はTreadstone60γ/FR4プレート/Diamond Starstone(lubed)/KBDFANS TOFU caseで書きました。  

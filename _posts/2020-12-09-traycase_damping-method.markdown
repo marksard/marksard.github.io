@@ -3,7 +3,7 @@ layout: post
 title: アルミトレイケースの不快な音を除去して「整音化」する
 date: 2020-12-09 11:45:00 +0900
 tag: [hardware, keyboard]
-image: 20201205-PC050044.jpg
+image: 20201208-APC_1984.jpg
 ---
 
 ## アルミトレイケースの不快な音を除去して「整音化」する

@@ -125,4 +125,4 @@ KBDfans module foamは[KBDFans](https://kbdfans.com/products/kbdfans-module-foam
 右：Treadstone60γPCB/FR4プレート/Diamond Starstone  
 ![img](/assets/photos/20201205-PC050054.jpg)  
 
-この記事はTreadstone60γ/FR4プレート/Diamond Starstone(lubed)/KBDFANS TOFU caseで書きました。  
+この記事はTreadstone60γ/FR4プレート/Diamond Starstone(lubed)/KBDFANS TOFU case（整音化済み）で書きました。  

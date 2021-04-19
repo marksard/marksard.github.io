@@ -1,0 +1,235 @@
+---
+layout: post
+title: 2020年の記憶をまとめてロンダリング
+date: 2021-04-19 13:30:00 +0900
+tag: [hardware, keyboard]
+image: 20201208-APC_1984.jpg
+---
+
+# 2020年の記憶をまとめてロンダリング
+
+　昨年はyoutubeで気まぐれにキーボードビルドログを残しはじめたり、やったことリストとかいう適当な記事でまとめてたり、twitterにアップしただけでブログにしてないのもあるなと思ったので、2020年の個人的やったことトピックを備忘録的に月別にまとめておこうかな。  
+
+## 1月
+
+写真見返してたら大阪で自キ新年会してましたね。めっちゃ懐かしい。  
+2020年はメイカーフェアに参加しようと思ってたんだけどコロナで無理だったな…  
+
+### NumAttack16
+
+![img](/assets/photos/20200530-IMGP5512.jpg)  
+
+　自分でも[Rhymestone]({% post_url 2018-12-31-summary-of-this-year %})をテンキー代わりにしてたんですが、やはりこのミニマルな4x4には敵いません。手持ちのキーボードの左側にキーキャップを合わせて置くだけで一体感も出てとても良いです。  
+　一時期、仕事のデバッグやテストでキーボードショートカットを多用してたので、VIA用ファームを入れてキーマップのカスタマイズをいつでも行えるようにして使ってて、最高に使いでのある相棒になってました。（もちろんテンキーとしては今も相棒）  
+　ちなみに私は右利きですが左手に置いて使っています。慣れると右手をポインティングデバイスから離さなくていいので便利です。  
+　[やったことリスト]({% post_url 2020-03-29-recent-events %})にも少し書いています。  
+
+#### ライブ配信
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xm6YrkhEOvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Treadstone32lite
+
+![img](/assets/photos/20200128-P1280047.jpg)  
+
+　Treadstone32の難しいMCUのはんだ付けをしなくて済むライト版を設計しました。（NumAttack16に影響を受けてます）MCU直付けの通常版はフェードアウトしようかなと思ってたんですが、ライト版が出たあとも通常版がちょくちょく売れていくのをみると、スイッチをあとから交換したいというニーズも高いのかな。うーん悩ましい。  
+　[やったことリスト]({% post_url 2020-03-29-recent-events %})にも少し書いています。  
+
+#### ライブ配信
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CRi5yRSzhVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Treadstone48 rev2
+
+![img](/assets/photos/20200118-P1180021.jpg)  
+
+　Treadstone48の改良版。[やったことリスト]({% post_url 2020-03-29-recent-events %})に書いたとおりですが、3mmキャスト透明アクリル→2mm押出半透明アクリル、PCBとプレートを1.6mm→1.2mm、ネジ位置を変更して柔らかい打鍵感を狙っています。個人的に底打ちする打鍵を好んでいるのと、ステムのセンターポストが長いHolyPanda系のスイッチでも打ち疲れないような配慮です。  
+　あとはPCBにベタッとシルク印刷してたため掠れが酷いなどのB品がよく出てたので極力シンプルなシルクに変更して、アクリルも追加費用のかかっていたアクリルへのレーザー刻印もやめつつ半透明にしてアンダーグローしたときに均一に光が回るようになりました。  
+　あとは不要機能をオミット、入手先がバラバラだったネジを統一、ゴム脚の統一と、コストを抑える方向の変更もしたので価格を改定しています。  
+　rev1のBLEキーマップの見直し、rev2のBLE対応、rev1,2ともにVIA仮対応なども行って息の長いモデルになっています。  
+
+## 2月
+
+　超速GPに時間を吸われていた模様。滅多にスマホゲームやらないんだけど、なんだかんだでまだ起動して遊んでます。  
+　キーボード活動はDiamondStarstoneを作ったりalpacaステムが届いたりしてたっぽい。  
+
+## 3月
+
+### Equinox
+
+![img](/assets/photos/20200625-IMGP5617.jpg)  
+
+　当初、スプリットスペースバーで組んだのですが、夏前にロングスペースバーに変更したら見た目の収まりがカッコよくなって大満足。  
+　キーマップはTreadstone32をベースにしてスペースバーをLT(UPPER, KC_SPACE)に、スペースバー右隣のキーをMO(LOWER)に。  
+　実はこのレイヤーキーの割り当てをしての使用感が個人的に大丈夫だったのもあって、ロングスペースバー30%のLeftover30が作れるなーと思い至ったのでした。  
+　当初つけたAlpacaが気持ち良かったので、さらに良くなるように後で買ったDES Filmsを挟んでより良くしたり、スタビをちょっと良いものに変えたりと組んでからちょこちょこカスタムもしています。  
+　キーキャップは色々つけてみたものの、ケースカラー的に今の所一番しっくりするのがGMK Metropolis。最高。  
+
+　[やったことリスト]({% post_url 2020-03-29-recent-events %})にも少し書いています。  
+
+#### ライブ配信
+
+ライブ配信失敗しているから消そうかどうか悩んでるんですが…😓  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eDW0yb-lqa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## 4月
+
+### Polaris
+
+![img](/assets/photos/20200501-IMGP5383.jpg)  
+
+　当初は通常版ケースにしとけばとちょっと後悔してたんですが、HHKBタイプのCapsLock位置がCTRLなのにも慣れました。  
+　ただケースカラーのダークグレイはニュートラルか少し緑っぽいグレーで合わせるキーキャップが意外と難しい気がしています。  
+　スイッチはDiamondStarstoneを入れてます。同じスイッチを入れている他のキーボードよりバネは軽く感じますが、底打ちの衝撃が硬いです。ブラスじゃなかったらもう少しマシだったのかと思うとハーフが欲しくなってくる…でもこの硬さもまた心地いいので難しいところです。  
+　数字行があればあるなりに使いやすいし、キーキャップがズラッと整列させられるのが気持ちいいし、US配列にも慣れてキーキャップとデフォルトレイヤーが一致しているのも気持ちがいいです。  
+　結局のところ、リファレンスとして持っておくのは正解だと思わせる一台です。  
+
+　[やったことリスト（その２）]({% post_url 2020-07-21-recent-events2 %})にも少し書いています。  
+
+#### ライブ配信
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JJMxZDqxXHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 5月
+
+　[GTSportのルイス・ハミルトン タイムトライアル チャレンジ](https://www.gran-turismo.com/jp/gtsport/news/00_5774214.html)を3月くらいからちょびちょびやってたけど、5月はかなり集中してやってた気がする。ダイアモンドまでは取れずとも、オールゴールドを達成して満足。  
+　あとTS32/32Lite/48rev2を在庫したり、遊舎工房さんでオンラインフリーマーケットに出店したり。  
+
+## 6月～8月
+
+夏のあいだはTS60のトレイマウントの音改善やLeftover30の設計をまたいでやってたな。あとVIAのJSON書いてたりもした。  
+
+### NQG
+
+![img](/assets/photos/20200606-APC_1719.jpg)  
+
+　2019年のTokyoMK vol.6の時にべるさんから譲っていただたべるさん設計のNQGを組み立て。  
+　オーソリニアの一体型30%。親指キーは選択式で私は4キーに。promicro下の1キーはctrlとかshiftを割り当てるのにちょうど良かったです。スペーサーが国内ではほぼ見かけない黒い6角スペーサーになっててオールブラックなのでやはり黒系のキーキャップが似合いますね。  
+
+### Treadstone60βγ（3月、6～7月ごろ作成）
+
+![img](/assets/photos/20201205-PC050054.jpg)  
+
+　αからキーレイアウト変更と、ネジ取付部周辺に切り込みを入れて打鍵時の衝撃を逃せるかと試したのがβ。βからネジ取付部周辺を切り込みからリーフスプリングっぽい感じにして、スリットをA行～Z行からZ行～モデファイア行に移動したのがγ。  
+　レイアウトの変更自体はこれでFIXかなと。ネジ取付部周辺は結果としてはどちらもあまり変わらないかなといった印象でした。この結果を受けての　[アルミトレイケースの不快な音を除去して「整音化」する]({% post_url 2020-12-09-traycase_damping-method %})記事でした。  
+　ブラスプレートも作ってみたりしましたが、トレイマウントはFR4がベターなのかなと今は思ったりしています。  
+
+　[やったことリスト]({% post_url 2020-03-29-recent-events %})にも少し書いています。  
+　[やったことリスト（その２）]({% post_url 2020-07-21-recent-events2 %})にも少し書いています。  
+
+### Leftover30（7～8月ごろ作成）
+
+![img](/assets/photos/20200821-IMGP5962.jpg)  
+![img](/assets/photos/20200829-IMGP6093.jpg)  
+![img](/assets/photos/20201101-IMGP6243.jpg)  
+
+　[独自変態配列省スペースキーボード開発者が変態配列省スペースキーボードを開発した話（LEFTOVER30）]({% post_url 2020-12-05-about-leftover30 %})と[LEFTOVER30のケースを塗装する]({% post_url 2020-12-07-painted-leftover30 %})にほとんど書いたのでそちらを～。  
+　このキーボードのケースとMT3のバランスが最高によいので、手持ちの二台はMT3をつけています。スイッチはAlpaca(Lubed w/ DES Films)とKBDFans T1。マウントが柔らかいのでタクタイルよりは弱めのリニアがオススメですね。L1あたりだとそのままでも十分です。  
+
+## 9月
+
+### REVIUNG33 K33B
+
+![img](/assets/photos/20200906-P9060018.jpg)  
+
+　Ortholinearで30%でロングスペースバーという尖った仕様の自作キーボードは買うしか！ということで購入。  
+　10列3行+WKL風レイアウトのモデファイア行という面持ちもすごく良いです。  
+　私は手が大きいのでOrtholinearはちょっと姿勢範囲が狭くなって厳しいのですが、Leftover30ベースのキーマップを入れて使っています。  
+　キーキャップは最初に使ってみたMT3だと微妙にバランスが悪かったのでDSACombatを使ってます。  
+
+### Kleine Gherkin
+
+![img](/assets/photos/20200927-IMGP6100.jpg)  
+
+　サリチルさんがMXスイッチで挟ピッチ作ったけどほしいひといる？ってお誘い頂いたので譲ってもらって、TEXの0.8u(くらい?)のキャップを別途買って組み立てました。  
+[Gherkinのキー数に挑戦する]({% post_url 2018-10-01-gherkin %})、[StoneAxe - 名刺基板の供養 -]({% post_url 2019-08-22-about-stoneaxe %})でやったおかげで30キーも打鍵くらいはすぐにできるようにはなるんですけど、サリチルさん的にはマクロパッド的な使い方を推奨されてたので、マクロパッド的な使いみちを探そうかなと思っています。  
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ホントに打鍵してるんだからね！<br>という事で<a href="https://twitter.com/hashtag/kleinegherkin?src=hash&amp;ref_src=twsrc%5Etfw">#kleinegherkin</a> の打鍵動画撮ってみた🍫<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89?src=hash&amp;ref_src=twsrc%5Etfw">#自作キーボード</a> <a href="https://t.co/YplD03t8hX">pic.twitter.com/YplD03t8hX</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1306531119412645890?ref_src=twsrc%5Etfw">September 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## 10月
+
+### QMK raw HID
+
+　QMKのRawHIDを使ってキーボードを外部から操作する、みたいな記事を観てちょっと自分もやってみよって思ったのが[コレ](https://github.com/marksard/RawHIDSampleAppForQMK)  
+　VIA、Remapはこれを使って書き換えているようです。PCからキーボードのバックライトを制御する人も出てきたりして、キーボード側へデータを送り込むのも面白い事が出来ますね。  
+
+### Vision
+
+![img](/assets/photos/20201020-IMGP6122.jpg)  
+
+　昔々、Microsoft Natural Keyboardをそれなりの期間使ってたハズなんですが、ひっかかりのあるキーがいくつかあったりメディアキーやエンコーダーとか使わないのに無駄にでっかい、みたいな印象しか残ってなくて肝心のエルゴノミックなRow-Staggeredキーボードの打ちやすさに関する記憶がない💦  
+　なので最初にAliceを観たときは「わざわざRow-Staggeredを折らなくてもColumn-Staggeredでいいやん」と思ってたのですが何故かカッコいいんですよね。でやっぱり欲しくなって…いくつかのAlice配列のキーボードをパスしてSattさんのVISIONを購入。  
+　ソケット版のPCBの親指まわりと右Shiftのレイアウトがちょっと不満だったのでとソルダー版PCBも追加で、アルミよりPOMのが音的には良いんじゃと思ってPOMプレートも購入。  
+　Leftover30の開発もあってRow-Staggeredばかり使ってる頃にVisionを組んだのですが、移行はあっさり出来るんだなと感じました。  
+　自作キーボードをはじめてから自分のホームポジションや打鍵姿勢も改善されて、左右でオーバーラップする指もないし、Row-staggeredでもそれなりに肩を広げて打鍵できるように矯正してきたので、エルゴミックか？楽か？どうなの？と問われると正直わかりません…😓  
+　今はPOMプレートにDurock Koalaスイッチで、ePBT Extended2048キーキャップをつけてます。設計上の打鍵の柔らかさにkoalaのバネがギリギリマッチングしているのか違和感を感じず快適に打鍵出来てます。Extended2048のカラーとのマッチングも良い感じ。  
+
+## 11月
+
+　The Last of US 2を二週した。一作目もストーリーが重めだったけど今回はより重くて重かった。  
+
+### Github Actionsを使ったQMK hexファイル自動ビルド
+
+　（ログを観たら）9月ごろに試したけどよくわからんで放棄してたGithub Actionsを使った[QMK hexファイル自動ビルド](https://github.com/marksard/qmk_firmware_hex/releases)が出来た。foostanさんがやってらしたのでそれを真似させていただきました🙏  
+　Github Actions、CIサービス含めてよく知らないから余計アレなんだけど動作確認に時間がかかるのが難点。  
+
+### サイドチェスト
+
+![img](/assets/photos/20201108-IMG_1615.jpg)  
+
+　衣類タンスが手狭になってきたので少し大きいものに買い替えたい→置くところがちょっと厳しいからレイアウトを変更したい→棚に置いているものが邪魔→不要なものを整理しつつ棚へのモノの置き方を変更…と雪崩式に整理する必要が出てきたのでちょっとずつ計画的に整理していくことに。  
+　不要なものを売ったり捨てたり、ある程度ざっくりで放り込んでたモノなんかをTPO別とか機能別、目的別に整理しなおし。  
+　で、デスク作業でよく使うようなツール、小物類をサイドチェストに入れたいなとなって、これまで使っていたIKEAの架台（脚）からIKEAのサイドチェストとネジ留めの脚にしてのアクセスを良くしつつ足元の狭さを改善しました。架台、かっこいいいんですが140cmの天板サイズは短すぎましたね…  
+
+### Drevo Calibur V2 MOD
+
+![img](/assets/photos/20201026-IMGP6197.jpg)  
+
+　YouTubeで「Poor Keyboard Mod」なんかで検索すると出てくるんですが、安いキーボードを改造して高級キーボードのように打鍵感、打鍵音を改善するようなhowto系をちょっと試してみたくて。  
+　ちょうどamazonのプライムデーの時にもともと安いのがさらに安くなってたのと、65%で矢印独立ならQMKじゃなくても普通に使えるか、という打算もあってDrevo Calibur V2を買いました。  
+　改造メニューは、ルブ済みスイッチへの交換、キーキャップ交換、スタビの潤滑、ケース底面への鉛シート貼り付けと中のクッションシートの交換。  
+　最初に付いてたoutemu製スイッチをlubeしても自分的には納得いかないだろうなと思ってたので、ルブ済みのDurock L1に交換。クリアハウジングなのでバックライトの光がよくまわります。  
+　スタビは元から少しグリスが塗られてましたが、拭き取って塗り直し。  
+　ケースは鉛シートを底面に少し貼って余計な振動を抑える感じにして、付属のスポンジからネオプレンのシートに交換して空間を埋めました。  
+　黒ケースで狭額縁なので、キーキャップは手持ちのを何合わせてもいい感じですが、NorthFacingなのでCherryプロファイルのものをつけるとハウジングの角とキャップの前側側面があたって打鍵感が落ちるのでCherry以外、かなぁ…  
+
+#### ライブ配信
+
+音声割れ気味なのは許して😓  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/brXY7nMBhYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 12月
+
+### メカトロウィーゴ
+
+![img](/assets/photos/20201206-IMG_1730.jpg)  
+
+　2年ぶりくらいに積みプラ崩しました。メカトロウィーゴは1/35のミリタリーミニチュアと合わせるのが良いなぁと思って取っておいたのですが、そんな事考えて妄想だけ膨らむので組めないんですよね…である日hdbxさんがウィーゴ組んでるのを観てしまって作りたくなったのでもう素組みでサクッと組みました。合わせ目も気にせずもうホントにサクッと。  
+　で気に入っちゃったのでそのあと二台積んでしまいました💦  
+
+### Crkbd36キーMOD
+
+![img](/assets/photos/20201129-PB290038.jpg)  
+
+　自作キーボード2作目だったcrkbd。私の手持ちのはほぼ初期のrev1.1で、今のcorne cherryとかchocolateになる前のさらに前になるのかな。買った当初から気になってたのが左右外側一列に入った切り取れそうなスリット。Helixも5行版と4行版に対応するために似たようなスリットがあって、以前設計者のfoostanさんも一度そのmini版を作ってたのでいつかやりたいと思ってました。  
+
+　月日は流れて。helixやcrkbdのスイッチをkailh proから交換したいなと思っていたのもあって、上のDrevoを買う時にはんだシュッ太郎neo（ハンダごてのこて先がシュッ太郎になっててスイッチはずすときの作業効率が超上がるやつ）も買って、さていよいよ交換するかって思っていた時にちょうどkochi keyboardさんがcorne mini用のアクリルプレートを販売したのをみかけて超絶GoodTimingだったので思わず買いました。  
+
+　改造するにあたり、ほったらかしだった不具合箇所もメンテナンス。  
+
+- TRRSコネクタがちょっとガタつくので半田を修正
+- OLEDのコネクタがちょっと斜めについていたので付け直し
+- バックライトLEDの半田が弱まっているのかパリピになりやすかったので半田を修正
+- キーマップをTreadstone32ベースで作り直し（36キー対応）、MatrixRGB対応
+
+　スイッチは、Aliazのドゥル感に馴染めなかった時代にCherry赤軸を入れて使えるようにしたキメラスイッチ。バックライトLEDのcrkbdに入れるとよく光るだろうと思って作り置いていたものを使っています。  
+
+　使い勝手に関して言えばまったく問題なく使えます。初めて触れた42キーのcrkbdの時は物理配列になれつつキーマップを日々アレコレ考えてたので、今私が使っているユニバーサルなキーマップを反映出来るのはなんだかとっても気持ちが良いです。  
+
+### 2020年を振り返ると
+
+　2020年はコロナ禍で3月中頃からちょいちょい在宅勤務にして、4月中中旬の大阪の緊急事態宣言からガッツリ在宅勤務、21年4月現在も在宅勤務です。  
+　在宅に切り替わって通勤時間ぶんの空いた時間は大体趣味のことをやってました。キーボードを設計してみたり、スイッチをルブしてみたり、スイッチやキャップを付け替えたり、PS4立ち上げてゲームしてみたり…おかげで通勤に使っていた筋肉がOUTして脂肪がINしたので、もっと運動を頑張らないと…  

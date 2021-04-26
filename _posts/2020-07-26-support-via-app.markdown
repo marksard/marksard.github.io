@@ -23,6 +23,9 @@ image: via_rs_01.jpg
 2020/11/25  
 Treadstone60αに対応しました。  
 
+2021/04/26  
+[4/26 release版](https://github.com/marksard/qmk_firmware_hex/releases/tag/release-20210426)からTreadstone60のPID/UIDが変更になりました。  
+
 ## VIAってなに？
 
 　QMK対応キーボードのキーマップを書き換えるアプリケーションです。  

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ミニベロに手を出しちゃった
-date: 2021-09-09 10:00:00 +0900
+date: 2021-08-09 10:00:00 +0900
 tag: [hardware, keyboard]
 image: 20210620-APC_2139.jpg
 ---

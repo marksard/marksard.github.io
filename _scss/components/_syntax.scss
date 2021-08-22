@@ -4,16 +4,16 @@
 .highlight {
   border: 1px solid $border-color;
   border-radius: 3px;
-  padding: $spacing-s $spacing-s;
+  // padding: $spacing-s $spacing-s;
   background-color: white;
-  margin: $spacing-m auto;
-  //overflow: scroll;
+  // margin: $spacing-m auto;
+  overflow: scroll;
   color: $text-secondary;
 }
 
 code {
   font-family: $code-family;
-  font-size: 90%;
+  font-size: 80%;
   line-height: 1.5;
 }
 

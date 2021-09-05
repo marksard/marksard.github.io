@@ -40,7 +40,7 @@ treadstone60はどうしてもプレートの一部が見えるので、ベー�
     Artisan Keycap: BOXXX_KEYCAP 西瓜と金魚と少年
 ](/assets/photos/20210808-IMGP7235.jpg)  
 
-## Blade
+## Blade60
 
 ![
     keyset: GMK Nautilus
@@ -56,4 +56,5 @@ KBDFansでGBされたもの。
 
 アシンメトリーなケースデザインで、今回E-Yellowを選択したこともあって奇抜でなかなか気に入っています。  
 
-ということで、どちらもケースから発せられる音を抑えられるような工夫を施しつつデザインも凝っていて中々良きケースでした。Bladeは再販の予定がありそうなので（通常販売も予定してるのかな？）気になる方はCheck it out!  
+ということで、どちらもケースから発せられる音を抑えられるような工夫を施しつつデザインも凝っていて中々良きケースでした。Bladeは再販されるのかな？（通常販売を予定してるのかな？）気になる方は[Check it out!](https://kbdfans.com/products/icblade-aluminum-60-keyboard-case)  
+

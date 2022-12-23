@@ -17,6 +17,6 @@ QMK FirmwareのBreaking change、時々悪さをしていましたが今回は�
 
 さて、私のエントリはネタとしてLTにでもって思ってたやつなのでスライド的な作りにしてみました。  
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ58OwP1c2riRNzpWxFFfdUnIuOJRV-9j-kXoS4NQeq2q3JUod9o-meZvzagj0iqFHsLFkCaJiYwZXE/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ58OwP1c2riRNzpWxFFfdUnIuOJRV-9j-kXoS4NQeq2q3JUod9o-meZvzagj0iqFHsLFkCaJiYwZXE/embed?start=false&loop=false&delayms=60000" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ※この記事はNCR80 R2(Aqua King 55g)で書きました

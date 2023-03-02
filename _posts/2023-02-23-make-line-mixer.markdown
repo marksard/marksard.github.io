@@ -30,6 +30,8 @@ image: 20230222-P2220005.jpg
 kicadの回路シミュレーションやって確認したりブレボで動作テストしたりしている間に考えた最終案のブロックダイアグラム  
 ![img](/assets/photos/mlm0802.png)
 
+**OSHとしてファイルを公開したので、もし作りたいひとはチャレンジしてみてください→ [Mini Line Mixer MLM0802](https://github.com/marksard/mini_line_mixer_mlm0802)**
+
 - A/B2系統各3ch
 - AにLch、BにRchのステレオ1ch入力
 - A/B2系統各メイン出力

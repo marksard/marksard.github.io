@@ -1,0 +1,48 @@
+---
+layout: post
+title: m0ii040用の基板を作った
+date: 2023-04-13 12:00:00 +0900
+tag: [hardware, audio]
+image: 20230321-IMGP8216.jpg
+---
+
+# はじまりはいつもつぶやき
+
+yohewiさんがm0ii040を作っているのをみて、Treadstone配列版作ったらカッコいいかなぁなんて思ってKLEで雰囲気作ってつぶやきました。  
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">M0ii0にTSレイアウトをねじ込んでみた <a href="https://t.co/Ohmnbg9GKL">pic.twitter.com/Ohmnbg9GKL</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1580782230817091587?ref_src=twsrc%5Etfw">October 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+個人的にキレイに収まって良さそうなレイアウトだなーと思ったけど、この頃ゲーム(CoDMW2)のオンラインばかりしててKLEで作ったまま終わってたんですが、年末に軍曹人格のyohewiさんにお誘いいただき作成させてもらうことになりました。  
+
+一年くらい基板作ってなかったのと、kicadが6になってたのもあり環境から作り直し。kicadも6にしてフットプリントも中途半端なものは作り直したりしました。  
+MCUも違うのにするかということでSTF32F0系を選択。フットプリントがATMEGA32U4よりちょっと大きい、USBの5Vを3.3VにするのにLDOが必要、ブートローダー起動ボタンも必要になるけど、代わりに水晶レス、データ線の抵抗レス、外部EEPROMレス（※内臓クロック使用、MCU側に内臓抵抗あり、EEOROMエミュを使用）で基板へのレイアウトそのものはちょっとラクな感じでした。  
+
+冒頭のつぶやきのレイアウトから最下段だけ修正して、Row-Staggered配列版PCBとファームウェア互換のTreadstone配列版PCBを作りました。個人的にどっちも使うのと、このサイズのRow-Staggeredの設計をすればLEFTOVER30の基板に転用出来るのでは？みたいな目論見もあり…。  
+
+
+![img](/assets/photos/20230128-IMGP8145.jpg)  
+
+Row-Staggered配列版はAleth42の配列とほぼ同一（キーキャップのことを考えるとこれが一番収まりが良い）の40キー。
+ちょっと興味本位で試作してみた切削堂さんの黒鉄プレートを付けています。錆が出てから対策しようと構わず使っていますが、今のところ大丈夫そう。ギラギラしてないのも好み。
+
+![img](/assets/photos/20230321-IMGP8216.jpg)  
+
+Treadstone版はこれまで60%、50%(48キー)、30%のラインナップだったのですが、40%は初めて。キーマップはTreadstone32に左側MODを3キー＋下段MODを4キー追加した39キー。
+中途半端にキー数増やすなら32キーのままでええやんとなって作ってなかったのですが、アルファベットにMODを仕込まなくて済むし位置的にやはり押しやすいので使い勝手的にはすごく良い感じです。  
+
+2月ごろに完成してからこの2つを交互に使ってて、3月に天キー4で展示させてもらいました。  
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">設置完了 <a href="https://t.co/VG0wVirL2J">pic.twitter.com/VG0wVirL2J</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1631864372015546370?ref_src=twsrc%5Etfw">March 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+yohewiさんのm0ii0、にるぽさんのalpha28のM6風ケースバージョンも一緒に展示させていただきました。  
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">増えてきた <a href="https://t.co/i9d7SnVa0i">pic.twitter.com/i9d7SnVa0i</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1631897639213240327?ref_src=twsrc%5Etfw">March 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+そして先日販売もさせていただきました。お買い上げありがとうございました！  
+[booth](https://marksard.booth.pm/items/4632380)  
+
+基板、プレートもオープンソースにしてありますので、m0ii040のケースにハマる基板を自分でレイアウトしたい！と思った方は是非挑戦してみてください。  
+[github](https://github.com/marksard/ms_m0ii040pcb)  
+
+現在は追加の基板を発注しててyohewiさんにもケースを準備していただいてます。  
+欲しい方はもうしばらくお待ちいただければ、と思います。  

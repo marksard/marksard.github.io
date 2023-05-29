@@ -3,7 +3,7 @@ layout: post
 title: モジュラーシンセ作りたい
 date: 2023-05-29 17:30:00 +0900
 tag: [hardware, eurorack, synth]
-image: 20201229-IMGP6342.jpg
+image: 
 ---
 
 [Mozziライブラリでシンセサイザーを作る]({% post_url 2023-05-08-make-mozzi-synth %}) で言及しそびれているんだけど、これモジュラーシンセ作りたいなというのが発端なんですよね。  

@@ -11,14 +11,14 @@ image:
 
 ## EURORACK規格
 モジュラーシンセにはEURORACK規格というのがある。  
-昔の所謂「タンス」の時はそんな規格はなかったようだが、doepfer A-100が出てからはこれをベースに作られている（もちろんタンス時代のものとはサイズが異なる模様）。  
+昔の所謂「タンス」の時はそんな規格はなかったようだが、doepfer A-100が出てからはこれをベースに作られている（もちろんタンス時代のものとはサイズが異なる模様）  
 
-* https://en.wikipedia.org/wiki/Eurorack
-* https://sdiy.info/wiki/Eurorack
-* https://doepfer.de/a100_man/a100m_e.htm
-* https://intellijel.com/support/1u-technical-specifications/
+* [https://en.wikipedia.org/wiki/Eurorack](https://en.wikipedia.org/wiki/Eurorack)
+* [https://sdiy.info/wiki/Eurorack](https://sdiy.info/wiki/Eurorack)
+* [https://doepfer.de/a100_man/a100m_e.htm](https://doepfer.de/a100_man/a100m_e.htm)
+* [https://intellijel.com/support/1u-technical-specifications/](https://intellijel.com/support/1u-technical-specifications/)
 
-参考: https://fukusan.com/products/doepfer/a100_bs2/
+参考: [https://fukusan.com/products/doepfer/a100_bs2/](https://fukusan.com/products/doepfer/a100_bs2/)
 
 ## 規格のおおざっぱな解説
 
@@ -49,14 +49,15 @@ M3x6mmくらいが標準っぽい
 * ノートON/OFFを伝えるためのGATE  
 	* 0V or ～5V　立ち上がりがON、0VでOFF  
 * モジュール間のコントロールを伝えるためのCV  
-	* 0V～5V  
+	* ユニポーラなら0V～8V 
+	* バイポーラなら5Vpp(-2.5V～2.5V)
 * 音の高さを伝えるためのCV(Control Voltage)  
 	* V/OctaveとV/Hzがあるが、EurorackはV/Octaveのみ？  
 	* 8オクターブまで伝えられるようにと0V～8Vくらいが規定されている模様  
-* テンポ情報を伝えるためのSYNC  
+* テンポ情報を伝えるためのSYNC（これは）  
 	* 0V or ～5V　立ち上がりが起点  
 		* 元の発想はDIN SYNCと思われる  
-			* https://ja.wikipedia.org/wiki/DIN_Sync  
+			* [https://ja.wikipedia.org/wiki/DIN_Sync  ](https://ja.wikipedia.org/wiki/DIN_Sync  )
 			* こっちはスタート* ストップ信号もあった  
 		* 単位はPPQN(Pulse Per Quater Note)  
 		* 2,4,24,48PPQNあたりがある  

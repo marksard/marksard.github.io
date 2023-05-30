@@ -7,11 +7,13 @@ image:
 ---
 
 [Mozziライブラリでシンセサイザーを作る]({% post_url 2023-05-08-make-mozzi-synth %}) で言及しそびれているんだけど、これモジュラーシンセ作りたいなというのが発端なんですよね。  
-今回はモジュラーシンセ作ってみたい自分のためにざっくりと決まり事をまとめときます。  
+今回はモジュラーシンセ作ってみたい自分のためにざっくりとまとめときます。
+もし間違え得ればご指摘いただければありがたく🙏
 
 ## EURORACK規格
+
 モジュラーシンセにはEURORACK規格というのがある。  
-昔の所謂「タンス」の時はそんな規格はなかったようだが、doepfer A-100が出てからはこれをベースに作られている（もちろんタンス時代のものとはサイズが異なる模様）  
+昔の所謂「タンス」の時はなかったようだが、doepfer A-100が出てからはこれをベースに作られている（もちろんタンス時代のものとはサイズが異なる模様）  
 
 * [https://en.wikipedia.org/wiki/Eurorack](https://en.wikipedia.org/wiki/Eurorack)
 * [https://sdiy.info/wiki/Eurorack](https://sdiy.info/wiki/Eurorack)
@@ -20,7 +22,7 @@ image:
 
 参考: [https://fukusan.com/products/doepfer/a100_bs2/](https://fukusan.com/products/doepfer/a100_bs2/)
 
-## 規格のおおざっぱな解説
+## おおざっぱな解説
 
 ### 幅、高さ、奥行
 
@@ -54,17 +56,17 @@ M3x6mmくらいが標準っぽい
 * 音の高さを伝えるためのCV(Control Voltage)  
 	* V/OctaveとV/Hzがあるが、EurorackはV/Octaveのみ？  
 	* 8オクターブまで伝えられるようにと0V～8Vくらいが規定されている模様  
-* テンポ情報を伝えるためのSYNC（これは）  
+* テンポ情報を伝えるためのSYNC（これは直接的にはeurorackとは関係ないのかな？）  
 	* 0V or ～5V　立ち上がりが起点  
 		* 元の発想はDIN SYNCと思われる  
-			* [https://ja.wikipedia.org/wiki/DIN_Sync  ](https://ja.wikipedia.org/wiki/DIN_Sync  )
-			* こっちはスタート* ストップ信号もあった  
+			* [https://ja.wikipedia.org/wiki/DIN_Sync](https://ja.wikipedia.org/wiki/DIN_Sync)
+			* こっちはスタート/ストップ信号もあった  
 		* 単位はPPQN(Pulse Per Quater Note)  
 		* 2,4,24,48PPQNあたりがある  
 			* Teenage EngineeringのPOシリーズは2PPQN  
-				* ていうか2PPQNってどうやって16ステップの間隔制御してるん…？パルスのON時間読んでいる？  
+				* ていうか2PPQNってどうやって16ステップの間隔制御してるん…？パルスのON時間読んでいる？それとも二回目のパルスまでの間隔で最後のパルスの間隔からのBPMを保持して…みたいにしている…？  
 		* 4PPQNで4/4拍子でいう16ビート相当のパルスが来る  
-		* パルスはシンメトリ(50%)とwikiには書いてるんだけどTeenage Engineering PO-32もパリピもRoland T-8もそんなことなかった…  
+		* パルスはシンメトリ(50%)とdinsync wikiには書いてるけど本当かなぁ（手持ちの機材はみんなそうではなかったので）  
 		* 1PPS（Pulse per sec？）みたいなのもあるけど使ったことはない  
 * オーディオ出力  
 	* -5V～5V　～10Vpp（規定では…）  

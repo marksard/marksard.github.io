@@ -3,7 +3,7 @@ layout: post
 title: 電子楽器の衝動買いが止まらない
 date: 2023-06-20 18:00:00 +0900
 tag: [hardware, eurorack, synth]
-image: 
+image: 20230620_IMG_5681.jpg
 ---
 
 
@@ -65,7 +65,7 @@ SH-101が下地っぽくて出音そのものは好きなんだけどスタン�
 
 そのうち記事化予定  
 
-### MMMIPlatformで作ったMIDIジェネレイティブシーケンサー
+### MIDIジェネレイティブシーケンサー
 
 ![img](/assets/photos/20230620_IMG_5682.jpg)  
 

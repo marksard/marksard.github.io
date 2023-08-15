@@ -77,6 +77,8 @@ FV-1は有志が作ったエフェクトプリセットが公開されていて�
 
 ![img](/assets/photos/20230623_IMG_5696.jpg)  
 
+マイコンアプリは[こんな感じ](https://github.com/marksard/ReverbIsland/blob/main/app/prototype/src/main.cpp)
+
 ### ただまぁ気になるところもある…
 
 この基板で気になるところ。  

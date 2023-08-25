@@ -22,3 +22,10 @@ keyboard:
   name: keyboard
 hashtwenty:
   name: hashtwenty
+roadbike:
+  name: roadbike
+synth:
+  name: synth
+eurorack:
+  name: eurorack
+

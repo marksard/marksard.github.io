@@ -1,31 +1,18 @@
 # To generate the tag page will need to be defined here
 
-magnetwindow:
-  name: magnetwindow
-development:
-  name: development
-windows:
-  name: windows
-other:
-  name: linux
-raspberrypi:
-  name: raspberrypi
-network:
-  name: network
-other:
-  name: other
-photographs:
-  name: photographs
+eurorack:
+  name: eurorack
 hardware:
   name: hardware
 keyboard:
   name: keyboard
-hashtwenty:
-  name: hashtwenty
+magnetwindow:
+  name: magnetwindow
+other:
+  name: other
+raspberrypi:
+  name: raspberrypi
 roadbike:
   name: roadbike
 synth:
   name: synth
-eurorack:
-  name: eurorack
-

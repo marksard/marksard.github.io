@@ -95,3 +95,13 @@ FV-1の最大入力は3Vppで4dBVにちょっと足りないので振り切り�
 ほか一部シルクミスとか、スイッチ付属LEDのフットプリントをデータシート読み違えによる逆接凡ミス💦とか、OLEDのノイズをもう少し抑えたいなとか、拡張基板と連結する配線幅を盛りすぎて切り離しがめんどくさすぎたとか、モジュラーシンセ用ケース（ユーロラックケース）を自作しはじめて、位置決めにはプレートが必要で、プレート作るなら基板も作り直したいよねとなって、現在修正版を発注しています。  
 
 ということで次回作につづく。  
+
+## 参考リンク
+
+https://akizukidenshi.com/download/ds/akizuki/AE-FV-1-DIP.pdf  
+http://spinsemi.com/Products/datasheets/spn1001/FV-1.pdf  
+http://www.spinsemi.com/products.html  
+https://www.pedalpcb.com/product/arachnid/  
+https://github.com/HolyCityAudio/SpinCAD-Designer
+https://mstratman.github.io/fv1-programs/  
+http://www.spinsemi.com/programs.php

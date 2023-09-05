@@ -63,7 +63,7 @@ SH-101が下地っぽくて出音そのものは好きなんだけどスタン�
 
 ### Spin Audio FV-1を使ったマルチエフェクター
 
-そのうち記事化予定  
+<strike>そのうち</strike> 記事化 <strike>予定</strike> した → [Spin Semiconductor FV-1でエフェクターを自作する]({% post_url 2023-08-14-pocketeffector %})   
 
 ### MIDIジェネレイティブシーケンサー
 

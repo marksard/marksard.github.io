@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Eurorack Playground MkI
-date: 2023-10-13 17:45:00 +0900
+date: 2023-11-13 17:45:00 +0900
 tag: [hardware, eurorack, synth]
 image: 20231113_IMGP8375.jpg
 ---

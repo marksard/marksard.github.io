@@ -6,7 +6,7 @@ tag: [hardware, eurorack, synth]
 image: 20231113_IMGP8375.jpg
 ---
 
-※2023/11/15 シンプルVCOあぷりについての記述を追加しました
+※2023/11/15 シンプルVCOアプリについての記述を追加しました
 
 ## 遊ぶためのモジュール
 
@@ -93,15 +93,14 @@ V/OCTは分岐して自作したDCO（そのうち記事にします）と、画
 GATEはbehringerのEGにつないで、DCOとVCOの出力はパッシブミキサーでまとめて、behringer neutronのVCF→VCAを通してGATEとEGで音長を制御しています。  
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RP2040 ZEROのPWM出力→RCフィルタ→オペアンプ増幅のシンプルなVCOアプリを作りました<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#自作モジュラーシンセ</a> <a href="https://t.co/obzaKjsNzC">pic.twitter.com/obzaKjsNzC</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1724377842090398191?ref_src=twsrc%5Etfw">November 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-こちらも旧基板のものですが、シンセアプリとマルチエフェクターモジュール（これは次回記事にします）と、Roland T-8と同期演奏したもの。
+こちらも旧基板のものですが、シンセアプリとマルチエフェクターモジュール（これは今度記事にします）と、Roland T-8と同期演奏したもの。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kcK_CpzOioQ?si=qq6R5CPKgHLsHEMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 こちらも同様で、PO-32とBehringer neutronと併せて演奏しています。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XlQaQ5SSPus?si=bKKvWbiKCLvrC8TV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-
-今後はDAC基板を追加して、EGやLFO、VCOも単体で作って遊びたいなと思っています。DACはすでにお試しして基本的な処理は出来てるので、LFOやVCOなんかはすぐ出来そうです。画面を作るのが面倒くさいだけ（）
+今後はDAC基板を追加したり、EGやLFOなんかのアプリも作って遊んでいきたいです。  
 
 
 ## 旧基板と試作
@@ -121,8 +120,9 @@ promicroは非力だし128x32ドットは狭かったので、エフェクタ基
 （奥：rev1.0.0　手前：rev1.1.0）  
 
 ![img](/assets/photos/20230828_IMGP8352.jpg)  
-旧基板を作ったころ
+旧基板を作った8月末ごろ。
 
 ![img](/assets/photos/20231113_IMGP8378.jpg)  
-今。LFOなども作っていってるので順次記事にしたいなと。
+そして11月のいま。記事を書かないで基板更新したりLFO作ったりDCOやパッシブLPGとか作ってたので増えてます。  
+これらについても順次記事にしたいなと思っています。
 

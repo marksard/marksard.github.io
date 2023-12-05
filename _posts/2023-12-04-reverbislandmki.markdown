@@ -30,6 +30,11 @@ Spin Semiconductor FV-1をRP2040で制御するマルチエフェクターモジ
 * DRY/WET搭載
 * CV入力(0-5V)をプリセット調整ポット3つのどれかに割り当て可
 
+回路図とアプリはgithubに置いています。  
+[https://github.com/marksard/ReverbIsland](https://github.com/marksard/ReverbIsland)
+
+![img](https://github.com/marksard/ReverbIsland/blob/main/_data/Reverb%20Island%20MkI%20Schematic%20rev1.1.0.png?raw=true)  
+
 ![img](/assets/photos/20231203_IMGP8421.jpg)  
 （ツマミはDタイプとローレットタイプが安くてデザインも良い感じのがアリエクにたくさんありました）  
 

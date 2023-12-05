@@ -6,7 +6,7 @@ tag: [hardware, eurorack, synth]
 image: 20231113_IMGP8375.jpg
 ---
 
-※2023/11/15 シンプルVCOアプリについての記述を追加しました
+![img](/assets/photos/20231113_IMGP8382.jpg)  
 
 ## 遊ぶためのモジュール
 

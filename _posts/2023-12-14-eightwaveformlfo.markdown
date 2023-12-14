@@ -61,7 +61,7 @@ image: 20231214_IMGP8466.jpg
 回路図をgithubに置いています。  
 [https://github.com/marksard/EightWaveformLFO/tree/main](https://github.com/marksard/EightWaveformLFO/tree/main)
 
-![img](https://github.com/marksard/EightWaveformLFO/blob/main/_data/EightWaveformLFO_rev1.0.0.png)  
+![img](https://raw.githubusercontent.com/marksard/EightWaveformLFO/main/_data/EightWaveformLFO_rev1.0.0.png)  
 
 ![img](/assets/photos/20230930_IMG_5998.jpg)  
 （配置を考えるの図）

@@ -28,15 +28,15 @@ image: 20231214_IMGP8479.jpg
     * 6HP
     * ±12V(実測各13mA) +5V(実測24mA)
     * 入出力
- 	    * 約10Vppバイポーラ ノコギリ波、矩形波、ミックス波の3出力
- 	    * V/OCT入力（～5V）
- 	    * PWM入力（矩形波、ミックス波に対応、バイポーラ入力）
- 	    * CV入力（～5V）
-	    * 操作系
-	    * Frequency
-	    * Fine
-	    * PWM Depth
-	    * CV Depth
+	  	* 約10Vppバイポーラ ノコギリ波、矩形波、ミックス波の3出力
+		* V/OCT入力（～5V）
+	 	* PWM入力（矩形波、ミックス波に対応、バイポーラ入力）
+ 		* CV入力（～5V）
+    * 操作系
+		* Frequency
+		* Fine
+		* PWM Depth
+		* CV Depth
 
 回路図とソースコードをgithubに置いています。  
 

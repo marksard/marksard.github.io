@@ -71,9 +71,18 @@ Cdsセンサーの反応速度の緩さでReleaseが伸びるエンベロープ�
 （Fluffy MINのノブ位置時間軸を拡大。ゲートONから5msくらいで開ききる）  
 
 ![img](/assets/photos/20240111_IMG_6480.jpg)  
-（Fluffy MAXのノブ位置。ゲートONから20くらいで開ききる）  
+（Fluffy MAXのノブ位置。ゲートONから20msくらいで開ききる）  
 
 音声波形をINに入れるもよし、上記のように直流をIN入れてエンベロープジェネレータっぽく使うもよしな感じですね。  
 ミキサーのほうはパッシブとわかって使う分には問題ないですね。マルチエフェクターに複数波形を入れたいときに重宝しています。
 
 もっとパッシブ回路を作りたい気持ちもありますけど、その辺はまた追々。  
+
+# デモなど
+
+KORG SQ-1を買ったのでそれで遊んだ動画なのですが、この動画では直流5Vを入れてGATEで開閉、その出力をVCF/VCAに入れてエンベロープジェネレーター的な使い方をしています。前述のLPGのゆるい減衰でもそれなりに機能するのが面白いですね。
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="zxx" dir="ltr"><a href="https://t.co/sfTOXLyq4a">https://t.co/sfTOXLyq4a</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1746415594650656905?ref_src=twsrc%5Etfw">January 14, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+このモジュールの操作動画。こちらは音源を入力してGATEで開閉。なので原音にLPGのフィルタがかかります。  
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">自作モジュラーシンセ<br>最近完成したDCO,LFO,LPGの組み合わせで最小のモノシンセを構成できました<br>やっとneutronの力借りずに単体で遊べる💪<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#自作モジュラーシンセ</a> <a href="https://t.co/fSA3HTfNOH">pic.twitter.com/fSA3HTfNOH</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1719661214513705019?ref_src=twsrc%5Etfw">November 1, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -1,0 +1,194 @@
+---
+layout: post
+title: RP2040 VCOとEEAO VCO(AS3340)
+date: 2024-05-10 21:00:00 +0900
+tag: [hardware, eurorack, synth]
+image: 20240414_IMGP8686.jpg
+---
+
+![img](/assets/photos/20240414_IMGP8686.jpg)  
+
+アナログ回路の発振器の周波数をRP2040でコントロールするデジタルアナログなDCOを作ったりしてちょっと後回しになってたんですがようやく(?)作りました。早速その話…の前にRP2040搭載自作モジュール用に作ったVCOアプリのこともちょっと書き残しておきます。  
+
+## RP2040 VCO
+
+DDS(Direct Digital Synthesizer)方式のデジタルタイプなVCO(Voltage Controlled Oscillator)です。  
+[https://ja.wikipedia.org/wiki/ダイレクト%E3%83%BBデジタル%E3%83%BBシンセサイザ](https://ja.wikipedia.org/wiki/ダイレクト%E3%83%BBデジタル%E3%83%BBシンセサイザ)  
+ざっくりと説明すると、1サイクルぶんの波形となる値を256個の配列に入れたとして、1秒間に256回取り出す場合、飛ばさず順番に256回取って出力したら1Hz、配列から10ずつ飛ばして256回取れば(配列256個目以上はまた0番目から飛ばして取る)、ガタガタにはなるけど近似した波形で10Hzになるね！というロジックのオシレータです。  
+JUNONE DCOの記事は制御アプリについて触れてませんが、任意の周波数でコア波形をリセットするためにこの方式を使ってたので、それをベースにインターフェースを整えて波形バリエを増やしました。  
+
+ソースコードは以下に  
+[https://github.com/marksard/EurorackPlayground/tree/main/app/SimpleVCO/src](https://github.com/marksard/EurorackPlayground/tree/main/app/SimpleVCO/src)
+
+
+作った当時のデモ。とりあえず音出してみたいなってだけだったので簡素なUIとSAW、TRI、SQR、SINEだけ。  
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">RP2040 ZEROのPWM出力→RCフィルタ→オペアンプ増幅のシンプルなVCOアプリを作りました<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#自作モジュラーシンセ</a> <a href="https://t.co/obzaKjsNzC">pic.twitter.com/obzaKjsNzC</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1724377842090398191?ref_src=twsrc%5Etfw">November 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+タイマー割り込みが重いなーと思ってたのでPWM割り込みに変えたり、PWMの出力ビット数やサンプリング周波数を調整して高調波が回り込みはじめる周波数帯をちょっと上のほうへ追いやって、UIも作り直したり機能増やしたりしました。  
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">ライブラリ未使用のRP2040 VCOに機能追加した！<br>SINE+RAMP<br>Detune phase RAMP<br>Wavefolding TRIANGLE(wavetableで読ませただけ)<br>ホワイトノイズを追加<br>あとGATE信号で波形ランダム切り替えさせたりUI作り直したり<br>PWM割込に変えたら軽くなって音質をちょっと上げられたので改造欲が出てきたのであった <a href="https://t.co/4NTfsLdZTE">pic.twitter.com/4NTfsLdZTE</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1773898995921977437?ref_src=twsrc%5Etfw">March 30, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+上の発展で、ゲートに合わせてCVで波形切り替えたらモノフォニックなリズムマシンにならない？と思ってやってみたもの。  
+スネア代わりのホワイトノイズがホワイトノイズのまま（普通はスナッピーを模した音を混ぜてフィルター掛けるん）だけどこれはこれでチップチューンぽくて良いかも。  
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">カッコいいのが出来たかも👽<br>RP2040オシレータの波形をCVレベルで選択可能にしたので、シーケンサーのCV OUTでオシレータを選択してリズムマシンに仕立ててみた<a href="https://twitter.com/hashtag/%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#モジュラーシンセ</a> <a href="https://t.co/Z6EBhAxd2U">pic.twitter.com/Z6EBhAxd2U</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1778052773441089598?ref_src=twsrc%5Etfw">April 10, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+現時点ではSQUARE,DOWN RAMP,UP RAMP, SINE+RAMP, PHASE RAMP(デチューン付), TRIANGLE(簡単WAVEFOLD設定付), SINE(簡単WAVEFOLD設定付)、WHITE NOISEの波形を選べて、PWM出力なら129kHz/11bit、MCP4922のSPI接続DACだと43kHz/12bit(SPIの命令完了まで時間が掛かってる…ちなサンプリング周波数はクロックとビット数から算出した割り切れる感じの数)で出力させて、3kHzあたりまでならまずまず使えるかな？と言うところまで作って満足しました。  
+
+## EEAO VCO
+
+さて本題のアナログVCO。AS3340というICを使います。  
+OTA（V13700）やインバータICのCD40106（ほぼ同時期に入手）を使ったVCO回路をブレボで組んだりもしたんですが、V/OCT周りの回路が不安定で面倒なので、専用ICから手を付けることにしました。  
+
+オリジナルのチップはCEM3340。  
+[https://electricdruid.net/cem3340-vco-voltage-controlled-oscillator-designs/](https://electricdruid.net/cem3340-vco-voltage-controlled-oscillator-designs/)  
+ここにCEM3340が搭載されたシンセの回路がいくつか掲載されてるんですが、SH-101もPROPHET 5も同じチップで作られてたのか！とびっくり。  
+30年以上前の設計の（互換チップと言えど名機に積まれてた）ICを使えるのはロマンがありますね。  
+
+他に回路を探してると日本語の記事もあって、特に電源まわり（±12Vで使う場合の話とか）とても参考になりました。先人に感謝です！  
+* [https://www.eddybergman.com/2020/01/synthesizer-build-part-18-really-good.html](https://www.eddybergman.com/2020/01/synthesizer-build-part-18-really-good.html)
+* [https://notchained.hatenablog.com/entry/2020/10/19/001147](https://notchained.hatenablog.com/entry/2020/10/19/001147)
+* [https://www.asahi-net.or.jp/~wz4k-tnk/MY/cem3340.html](https://www.asahi-net.or.jp/~wz4k-tnk/MY/cem3340.html)
+
+データシートの回路から入って、各機能単位で定数の調整をしつつ追加していく感じで組んでいきました。  
+回路図は諸元とともにgithubに置いています。  
+波形もこちらに載せています。  
+[https://github.com/marksard/EEAOVCO](https://github.com/marksard/EEAOVCO)  
+![img](https://raw.githubusercontent.com/marksard/EEAOVCO/main/_data/eeao_vco_rev1.0.0.png)  
+
+仕様
+* 8HP
+* ±12V(実測各19mA)
+* 入力
+    * V/OCT x2（一方はスルー出力としての使用を想定）
+    * FM
+    * PWM
+    * H.SYNC（背面ジャンパでネガ、ポジ、ネガポジ切り替え）
+    * S.SYNC
+* 出力
+    * PULSE
+    * RAMP
+    * TRIANGLE
+    * SINE
+    * RAMPH
+* コントローラー
+    * COARSE
+    * FINE
+    * PW
+    * FM MOD DEPTH
+    * PWM MOD DEPTH
+    * RAMPH BALANCE
+
+3340に備わっている波形はPULSEとRAMPとTRIANGLEの3つ。ただし0V～のユニポーラ出力かつピーク電圧がバラバラ。なので、バイポーラ出力にオフセットする調整回路とゲイン調整回路を入れました。バイポーラで8Vppくらいに合わせました。  
+
+つぎに、サイン波形が欲しいなと思ってたのでバイポーラ出力TRIANGLEからサイン波形を作る回路を追加しました。LFOモジュールで使ったのと同じ回路です。  
+
+あとブレボで動作確認していて波形を最初からまぜた出力がやっぱり欲しいなってなって、でも占有スペースは出来るだけ増やしたくないからとミックスパターン固定の出力を追加しました。エフェクタで使ったDRY/WET回路でPULSE～SINEを可変したものにRAMP波をミックスしてモーフィングする出力をRAMPHと名付けてみました。  
+
+ハードシンクはeddyburgman氏のを真似させてもらってポジ、ネガ、両方の3つを取れるようにしました。でも頻繁に切り替えないだろうと思って背面のジャンパピン選択式にしました。このハードシンクなんか独特というか、リセットタイミングと波形の位置関係がリセットされると言うか…ネガティブハードシンクが一応近いと言えば近い…のか…トラディショナルハードシンク回路がデータシートに乗ってるのでこれを使えばマトモになると思いますが、ICの味ということでそのまま使うことにしました。  
+
+
+## 写真など
+
+名称は3340をそのまま名前に使うのもそっけないなと思ってLEET表記の逆変換でEEAOにしてパネルの他の文字列はLEET表記に。で空間埋めるために変換解説をいれたりして…とやってるうちにこうなりました。  
+
+![img](/assets/photos/20240414_IMGP8686.jpg)  
+![img](/assets/photos/20240414_IMGP8688.jpg)  
+
+半固定抵抗が全部で10個と多く、でもポットとジャック数的に8HP幅くらいにしたいなと考えてコントロール基板とメイン基板の二段でかつ抵抗類は表面実装にしてPCBAにだしました。
+写真では隠れているけどレンジ設定だけは精度が必要なので多回転タイプにしました。残りの半固定も多回転タイプにすると微調整しやすいんだけど…
+
+オシレータは複数欲しくなるので、シングルVCOにしてPCBAすると3つ以上は手に入るのでお得感がありますね（？）  
+
+![img](/assets/photos/20240414_IMGP8691.jpg)  
+
+## 使い勝手など
+
+組み立て初回だけ、手間のかかる調整が必要。  
+最初に各出力電圧とオフセットを調整。バイポーラ8Vppに調整します。オシロ必須。  
+とりあえず半固定抵抗を全部中央に設定してから、PULSE、RAMP、TRIANGLEを調整していきます。最後にSINEのカーブ具合と電圧を調整。  
+次にV/OCTのレンジ設定。電源入れてチップや周辺温度が安定するよう数分～20分程度待ってからするとより良いのかな。  
+まず半固定抵抗を最小に設定して、COARSEで0V時の周波数を設定  
+V/OCTに0Vと2Vを交互に入れて、2Vにした時に2オクターブ上の周波数に合うように半固定抵抗を回していく  
+（例えば0VでCOARSEを55Hz(A0)にして、V/OCTに2V入れた時220Hzになるように調整していく）  
+…んだけど、レンジ調整していくと0V側の周波数も前後に変化しながら範囲が広くなったり狭くなったりするので、  
+2Vで半固定調整→0Vで周波数確認と再調整→2Vで半固定調整→0Vで周波数確認→2Vで半固定調整→0Vで周波数確認→…  
+を何度も繰り返します。  
+で、2Vで合うようになったら、0Vと5Vを交互にいれて同じように調整（0-2Vの調整でほとんど合ってるはずなので数回で終わる）  
+一度やればあとは普通に使えます。電源入れた直後も音痴な感じはなさそう。  
+
+出音は安定してて使いやすい。  
+FMもH.SYNCもS.SYNCもあるとVCO同士を組み合わせての音作りに幅が出るので、（言うて大概金属音になりがちですけど）パッチングするのに素直に楽しい。  
+自身の波形を自身のFMに入れて波形を変形させたり、V/OCTに入れたりとセルフパッチするのも楽しいです。  
+RAMPH波はSINE+RAMPの音がお気に入り。  
+
+基音の調整で大抵は低音域側に合わせることになるんですけど、自作DCOや上の自作RP2040オシレーターは周波数変化がリニアで低音域の調整がちょっとシビアだったんですよね（アプリでカーブの調整を出来るよなと思いつつ…）  
+アナログVCOだとCOARSEはV/OCTとミックスして入れてる関係上、低音域側の変化がゆっくりで基音の調整がやりやすいなって思いました。FINEで±4半音くらいで調整できるので調整もしやすいですし。  
+
+COARSEでの調整幅は0.6Hz～2.8kHz程度（2.8kHzからV/OCTを入れると20kHz以上出る）で十分。PWMにいれてゆったり揺らすとか、ビブラートなんかに使えるようにと思って低域側に振ったんですが、COARSEポットの前半が超低音の領域で占められてます💦  
+もう少し上のほうに寄せて10Hz～になるようにキャパシタの容量を調整してあげてもいいかも。  
+
+さらにLFOっぽく使いたい場合もあるのでキャパシタを追加してさらに低い周波数に振ってみた2台目を作ってみました。  
+pin11の1000pF(1nF)部分に並列で10nFを入れると、COARSE調整幅は0.06Hz(16秒)～330Hzくらいになりました。  
+SYNCは低周波では動作してくれてなさそうですがV/OCTは動いてくれて、基音1Hz時に5V入れるとちゃんと32Hzになりました。上も300Hzまで設定出来ればV/OCT5V側で10kHzあたりまで伸びるのでシーケンスさせるぶんには十分。VCLFOになりますね。
+次作るならキャパシタの切り替え機能つけても良いかも。  
+
+改造後にalfaの公式サイト？を見つけてLFO化MOD化する方法もありましたので参考までに。  
+[https://www.alfarzpp.lv/eng/sc/AS3340%20%20tip%20ultra-%20LFO.pdf](https://www.alfarzpp.lv/eng/sc/AS3340%20%20tip%20ultra-%20LFO.pdf)  
+H.SYNCのピンとGND間に～39kくらいまでの抵抗入れて調節してって書いてますね（なんのためかはちょっとこの資料からではわからないけど）これに対応したらSYNCもちゃんと聞くようになったりするのか…な？  
+
+pulseの改善回路も掲載されています。  
+[https://www.alfarzpp.lv/eng/sc/AS3340.php](https://www.alfarzpp.lv/eng/sc/AS3340.php)  
+
+
+## 気になる点。不具合など。
+
+### COARSEの回路
+
+回路ミスってて、COARSEが-12V～12Vの接続になってて下半分がほとんど動かなくて最初ビビりました…-12Vを繋いでる部分の基板をカットしてGNDへ（回路図は修正済）  
+
+### パルス波をPWMすると発音周波数がブレる
+
+パルス波でPWMかけると音程(周波数)も一緒にモジュレーションかかった感じになってちょっと違和感が。  
+ブレボでの実験時にも薄々感じてたもののブレボではもともと周波数が不安定（使ってるブレボがあんまり良くない）なのもあって無視してたんですが、基板でも現象が変わらなかったので調べてみるとどうもAS3340のウィークポイントだそう…。  
+PULSEとPWMのピン間に1M～10Mの抵抗を繋ぐとマイルドになるとあり、私のは1MΩを追加して解決しました。（回路図は修正済）  
+TRIからコンパレータ回路でパルス作ったほうが確実らしいですが。  
+
+### PULSEとRAMPがリンギングしている
+
+波形を見ているとPULSEとRAMPがリンギングしている…原因を調べるとオペアンプの増幅率設定が2倍程度と低いためリンギングしていました…出力と反転入力間に22pFを入れて解決（回路図は修正済）。  
+ちなみにPULSEのピンから調べてリンギングしている場合は、これもPULSEとPWMのピン間に1M～10Mの抵抗を繋ぐと改善するらしいです  
+
+### RAMPH波のRAMP+PULSE
+
+DCOの時にPULSE+RAMPのミックス波形を作ってそれが良かったので今回もえいやで混ぜる設計をしたんですが、RAMPとPULSEの位相がよくなくて、ゆっくりしたPWMを深く掛けるとバイアス位置が上下に揺れて音程も不安定になります。が、まぁ深く掛けなければ問題はないか。  
+
+### 半固定多すぎ問題
+
+初期設定時だけめんどくさい問題なんだけど、半固定が多いのは気になる。個別に調整出来たほうが良いかと用意したけど、半固定一つにしてOPAMPでバッファ取ったうえで各オフセットの回路に分配するとか…それか、シリーズレギュレーターとかで-12Vから-5V作ってAS3340のVEEにいれたついでに、その定電圧を活用するとか。
+
+## デモとか
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">AS3340(CEM3340)で作った自作VCO(奥)と、RP2040で作ったDCO(左)と、T-8のドラムとベースを使って演奏してみたけど…<br>2台でもおぼつかなかったけどさらにアタフタして処理能力が追いつかないな…<br>自分で聴いちゃって色々タイミング逃してる…練習あるのみだな <a href="https://t.co/uahxbbTcAp">pic.twitter.com/uahxbbTcAp</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1779831758344843739?ref_src=twsrc%5Etfw">April 15, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">不協和音お構いなしにトランペットが狂ったように演奏してる雰囲気がある <a href="https://t.co/KJitxXsjrS">pic.twitter.com/KJitxXsjrS</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1784218665283657861?ref_src=twsrc%5Etfw">April 27, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+
+## 現在の感想など
+
+VCOを作り終えて、当初作ってみたいと思ってたアナログなモジュールは一通り作りました。
+当初ステレオジャックをモノで使ってたりポットも安いの使ってみたりパネルの穴径、パネルデザイン、パネルと基板流用のための設計の迷走なんかがあった上に設計も一部ミスが必ずあったりして反省しきりなんですが、こう自分が欲しいモジュールを並べてパッチングして音を出す行為というのは、プリセット一発呼び出し、一発保存にない養分があってイイですね。
+調査・検討・設計・工作する。作ったものを並べる。作ったもので音色を作る。作ったもので適当にちょっとした音にしてみる。というこの一連の行為が今のところ楽しい感じです。
+
+## ケース
+
+自作した52HPケースに収まらなくなったのでdotRed Audio DesignsのWORKFRAME84-C（USB-C電源付）を購入しました。がもう満杯です(笑)
+
+うーん、最初から二段とか三段とか買っておくべきなのかもしれませんね…自作するなら板金（かウッド）と電源回路とバスボードの設計かぁ…
+
+![img](/assets/photos/20240425_IMGP8695.jpg)  
+
+IKEAのケースのほうは現在こんな感じ。この大きさでアンビエントなシステムを作ってみたい気もします。
+
+![img](/assets/photos/20240425_IMGP8696.jpg)  

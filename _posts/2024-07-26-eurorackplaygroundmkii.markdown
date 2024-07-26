@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Eurorack Playground MkII
-date: 2024-07-26 19:00:00 +0900
+date: 2024-07-26 17:00:00 +0900
 tag: [hardware, eurorack, synth]
 image: 20240718_20240718-IMGP8787.jpg
 ---

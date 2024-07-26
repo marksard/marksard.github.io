@@ -53,7 +53,7 @@ RP2040 zeroを積んだ8HPサイズのユーロラックモジュール[「Euror
 * サイズ
     * 8HP(基板1段)
 
-不満点というのが  
+不満点は
 
 * 入出力が弱い
 * LFOやオシレーターをそのまま受けられるバイポーラな入力が欲しい
@@ -61,7 +61,7 @@ RP2040 zeroを積んだ8HPサイズのユーロラックモジュール[「Euror
 * 操作性がイマイチ悪い
 * MIDIもう要らない
 
-という感じなので、RP2040 ZeroとSSD1306を使うこと以外は見直しました。  
+なので、RP2040 ZeroとSSD1306を使うこと以外は見直しました。  
 
 ### 入出力
 
@@ -75,12 +75,12 @@ GATE入力は単純にデジタル入力を割り当て。
 出力は6つすべて2次パッシブフィルターを付けたPWM出力。  
 バイアスとゲインを調整して整えればバイポーラ時は10Vpp以上。ユニポーラなら8Vppくらい。ユニポーラ設定にしてPWM最大出力時を5Vに調整すればV/OCT出力も出来るかと。  
 パッシブフィルターは2次で8kHzくらいに設定。  
-またPWM出力にはLEDを付けてどこが出力されているのかわかるようにしました。出力オペアンプの手前につけてるのでバイポーラ出力時はバイアス値出力のため常に光っちゃいますが、トリガーやゲート、エンベロープ、LFOの時は出力の状態がわかりやすいかなと。  
-OUT1～OUT4はHWSPI指定のピンに割り当てたので、3.3V電源とSPI DACを追加したDAC化基板を作れるので、音質重視にしたい場合はここだけ作り直すのも良いかなと。  
+またPWM出力にはLEDを付けてどこが出力されているのかわかるようにしました。GPIO出力につけてるのでバイポーラ出力時はバイアス値出力のため常に光っちゃいますが、トリガーやゲート、エンベロープ、LFOの時は出力の状態がわかりやすいかなと。  
+OUT1～OUT4はHWSPIが割り当てられているピンを使っているので、3.3V電源とSPI DACを追加したDAC化基板を別途作成することも出来るかな？と。  
 
 ### 表示・操作系
 
-表示系はOLEDのほかに2つある自照式ボタンのLEDをプログラム出来るようにしました。このLEDはHWシリアルのTX,RX指定のピンに割り当てたので、LEDで光らせる代わりにMIDI送受信回路を繋げてMIDItoCVとかにも。  
+表示系はOLEDのほかに2つある自照式ボタンのLEDをプログラム出来るようにしました。このLEDはHWシリアルのTX,RX指定のピンを使っているので、LEDで光らせる代わりにMIDI送受信回路の基板やパネルを作って繋げて、アプリを書けばMIDItoCVを作ることも可能。  
 
 自分でグリグリ動かすよりもCVやトリガーで動かせた方がとなったので操作子類は減らしました。プログラム可能なエンコーダーとポットは1つずつ。エンコーダーはプッシュボタン付きのものを。SPDTの両側モーメンタリスイッチはやめて自照式ボタンを2個。  
 使い方的にはポットはリアルタイム向きな操作を割り当てる用、ボタンは画面遷移やメニュー操作に、エンコーダーは設定値の変更に、という想定。  
@@ -131,16 +131,20 @@ RP2040のそばにあるジャンパピンは3V3、GND、TX、RXを出してて�
 
 ## アプリと実機動画
 
-すでに3つほどアプリを作ったので、かるく動画だけでも。  
+すでに4つほどアプリを作ったので、かるく動画だけでも。  
 
 ### 3VCO
 
-MkIのSimpleVCOアプリを移植した上でMkII用に機能追加しました。VCO/VCLFO切替x2、VCLFOx1、ホワイトノイズx1。設定でVCOやLFOのピッチをCVで操作するよう割り当てて調整すれば和音ならしたり独立したVCOとして。また外部のEGやフィルターモジュールを駆使して、3VCOとホワイトノイズを使ってバスドラ、スネア、ハイハットの音を作り込んだりも。  
+MkIのSimpleVCOアプリを移植した上でMkII用に機能追加しました。VCO/VCLFO切替x2、VCLFOx1、ホワイトノイズx1。設定でVCOやLFOのピッチをCVで操作するよう割り当てて調整すれば和音ならしたり独立したVCOとして。  
 波形選択をCVでやらせれば、1VCOだけでドラムっぽい音を出せたりも。  
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">BD,SD,HH,ベースとなる元の音を一台で出してみた<br>BDはVCLFOと、CV2に入れたEGでビッチを変化<br>SDはホワイトノイズとスナッピー音のVCO Bをミックス<br>HHはホワイトノイズをHPF通して<br>ベースはVCO Aで演奏しつつLPF通し、CV1に入れた外部LFOでシェイプ変化させてる<br>ボタンのLEDはCV1,CV2チェック用に表示 <a href="https://t.co/1ouWJuhYSU">pic.twitter.com/1ouWJuhYSU</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1804867036100911210?ref_src=twsrc%5Etfw">June 23, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
 
+3VCOとホワイトノイズを使ってベース音（ノコギリ波）とベースドラム（三角波・サイン波）、スネア（サイン波形でスナッピー音＋ホワイトノイズ）、ハイハット（ホワイトノイズ）の要素を一台で出して、外部モジュール（エンベロープジェネレーター、ローパスフィルター、ハイパスフィルター、VCA）で音作りをしています。  
+
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">レイブなサウンドが出てきたんだが <a href="https://t.co/cIuQZ4g0Gk">pic.twitter.com/cIuQZ4g0Gk</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1805974624188145699?ref_src=twsrc%5Etfw">June 26, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+これは3VCOの音程をそれぞれずらしてチューニングして鳴らしてます。キーを意識せずサンプラーから出したようなワンコード演奏だけどハウスとかハードコアテクノ的にはこれでも十分ですよね…   
 
 
 ### クロックディバイダー
@@ -163,7 +167,6 @@ MkII用新作。外部トリガーによるワンショットの発音で、現�
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">MkIの16ステップシーケンサーをMkIIへざっくり移植<br>メニュー体系はもうちょっと考えないとかなぁ… <a href="https://t.co/SiGf11ayRs">pic.twitter.com/SiGf11ayRs</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1815333644552294465?ref_src=twsrc%5Etfw">July 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 MkIを移植。操作子類が少なくなったのでそれに合わせて使いやすくしたうえで、一番多用しているランダム生成でのオクターブ範囲やゲート長さ範囲を変更出来るようにして、使っていない機能を削除したりと手を加えてます。  
-操作性も問題なかったのであとでMkIのほうにもバックポーティング。  
 
 
 ### ほか

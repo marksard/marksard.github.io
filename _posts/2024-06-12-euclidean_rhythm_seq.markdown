@@ -98,8 +98,9 @@ Euclidean.hppがユークリッドリズム生成のコア。ステップ数と�
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">結構いい感じの詰め詰めユーティリティアプリが出来た！<br>・ユークリッドリズム出力(デュレーション調整可能)<br>・サンプル&amp;ホールド(内部ランダムかCV入力から選択、トリガーはクロック入力かユークリッドから選択)<br>・S&amp;Hはクオンタイザー通して出力(スケール7種から選択)<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#自作モジュラーシンセ</a> <a href="https://t.co/M6591VsJvZ">pic.twitter.com/M6591VsJvZ</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1790754660942581933?ref_src=twsrc%5Etfw">May 15, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
 
-これは16ステップシーケンサーアプリと繋いでアンビエントしてみたもの  
-モジュールが増えてくると鳴らし方のバリエも増えるのでかなり楽しい  
+ユークリッドリズムの視覚表現をOLEDに表示。上のユークリッドリズムの解説にもこの表現がありますね。  
+hagiwoさん作のユークリッドリズムシーケンサーでこのシーケンス方式を知ったので、真似してみたかったんですよね。  
+[https://note.com/solder_state/n/n433b32ea6dbc](https://note.com/solder_state/n/n433b32ea6dbc)
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">ハギヲさん作ユークリッドリズムシーケンサーのクルクルする画面のやつ真似したい！って思って作りました<br>視覚的にわかりやすくなるのでとても良き<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#自作モジュラーシンセ</a> <a href="https://t.co/TnbXEzh8VU">pic.twitter.com/TnbXEzh8VU</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1791073073229418569?ref_src=twsrc%5Etfw">May 16, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
 
@@ -107,7 +108,12 @@ Euclidean.hppがユークリッドリズム生成のコア。ステップ数と�
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">簡易オシロスコープを作り直して載せやすい形にした<br>他の処理と併せてポーリングで溜め込むタイプなのでアバウトだけど他の機能と併用出来る<br>内部で作ったLFOやS&amp;Hの波形(12bit数値)も流し込めるからアプリ開発時のデータ確認とかにも使えるかも？ <a href="https://t.co/OcPtgasjBN">pic.twitter.com/OcPtgasjBN</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1795038849904603281?ref_src=twsrc%5Etfw">May 27, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
 
+アンビエントしてみた。
+16ステップシーケンサーと組み合わせたり、VCLFOと組み合わせてステップを速くしたり遅くしたりと遊びの幅が広がりますよね。
+
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">ドローンというかアンビエントというか？<br>モジュールのLEDに黄色と緑をふやして楽しい<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#自作モジュラーシンセ</a> <a href="https://t.co/vWPcL0T51F">pic.twitter.com/vWPcL0T51F</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1796543739139387801?ref_src=twsrc%5Etfw">May 31, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+## おまけ（ケース）
 
 今年の春先にdotRed Audio DesignsのWORKFRAME84-Cのケースを買ったんですが、明らか足りないので先日ArturiaのRackbrute 6Uを買い増ししました。  
 この子をこの場所に置くためにデスクまわりを模様替えして奥に棚を置いたりモニタースタンドを右にオフセットしたりしました。  

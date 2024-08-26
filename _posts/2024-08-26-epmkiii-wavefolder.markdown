@@ -22,8 +22,7 @@ Moritz Kleinという方の設計のダブルウェーブフォルダー回路�
 ![img](/assets/photos/20240707_IMG_7311.jpg)  
 
 ブレボ上で遊ぶ＆動作確認を済ませてラックに載せたいな、となったら作業開始。  
-実装範囲がコンパクトになるようにブレボ上で整理して組みなおして、再度動作確認を済ませます。  
-このとき回路定数の記録と頭の整理のために回路図だけでも書いておくと良いかなと。  
+まずあらかじめ実装範囲がコンパクトになるようにブレボ上で整理して組みなおして、再度動作確認を済ませておきます。   
 
 ![img](/assets/photos/20240707_IMG_7312.jpg)  
 
@@ -33,13 +32,14 @@ Moritz Kleinという方の設計のダブルウェーブフォルダー回路�
 ![img](/assets/photos/20240707_IMG_7313.jpg)  
 
 一旦完成…  
-したけど早速改造。  
-回路図を清書しててオペアンプ1基とダーリントンバッファが1基余っているので、エンベロープジェネレータを追加しました。1モジュールでEG+VCA+ウェーブフォルダーの機能が付いてお得！みたいな？  
+したけど早速改造することに。  
+回路図を清書してるとオペアンプ1基とダーリントンバッファが1基余っているのが気になったのでエンベロープジェネレータを追加しました。1モジュールでEG+VCA+ウェーブフォルダーの機能が付いてお得！みたいな？  
 
-## 最終的な回路図  
+## 回路図  
 ![img](/assets/photos/eg_vca_wavefolder_schematic.png)  
 
 VCAは以前作ったMinimalistVCAの回路そのまんまです。  
+
 ウェーブフォルダー回路は入口のポットを省略して、オフセットが出力に出やすい回路のためカップリングして、トランジスタは2SC1815/2SA1015ペアに変更。マッチングも取ってなく折り返し量のバランスが悪いので、微調整出来るようエミッタ抵抗を半固定に。半固定抵抗の定数は手持ちのありあわせなので、あるなら固定+微調整のための半固定とかにするのがベターと思います。  
 
 エンベロープジェネレータは入力の電圧を反映するタイプなので増幅も出来るように。  
@@ -50,14 +50,14 @@ VCAは以前作ったMinimalistVCAの回路そのまんまです。
 * VCA OUT → WAVEFOLDER IN  
 
 となるようTN端子同士を結線したので、どれにもプラグが刺さってない時は音声IN/OUTとゲート信号のケーブル3本で済みます。  
-VCAだけ、EGだけ使いたいという事が割とあるのでこれが出来るのは便利です。  
+VCAだけ、EGだけ使いたい時はプラグを刺せば分離します。  
 
 ## 実装後
 
 ![img](/assets/photos/20240718_20240718-IMGP8804.jpg)  
 
 表面にプリントラベルをはって印字で役割を示しつつ穴が空いたままの部分を隠しました。これなら見栄えもなんとか。  
-回路図には載せてませんがEnvelope出力を使ってLEDを点灯させています。  
+回路図に載せるのすっかり忘れてましたがEnvelopeの出力を間借りしてLEDを点灯させています。  
 
 ![img](/assets/photos/20240718_20240718-IMGP8823.jpg)  
 
@@ -66,13 +66,13 @@ VCAだけ、EGだけ使いたいという事が割とあるのでこれが出来
 ![img](/assets/photos/20240718_20240718-IMGP8827.jpg)  
 ![img](/assets/photos/20240718_20240718-IMGP8840.jpg)  
 
-機能追加後の背面です。改造で配線がごちゃっとなってしまいましたが、機能するのでヨシっ！  
+機能追加後の背面です。改造で配線がごちゃっとなってしまいましたが機能するのでヨシっ！  
 
 ## デモ  
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">V13700 VCA + トランジスタによるダブルウェーブフォールドのモジュールになりました！<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#自作モジュラーシンセ</a> <a href="https://t.co/nWZuJBkyyK">https://t.co/nWZuJBkyyK</a> <a href="https://t.co/RwCBKb5L5f">pic.twitter.com/RwCBKb5L5f</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1809958220217340195?ref_src=twsrc%5Etfw">July 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
 
-波形の折り返される感じのデモ。  
+波形の折り返しが見られます。  
 下の波形が元波形、上の波形がウェーブフォルダーを通した波形。
 CV1,2にLFOとエンベロープを入れて音量を変化させ、一定音量以上は波形を折り返して出力しているのがわかると思います。  
 
@@ -102,7 +102,7 @@ EG機能のデモ。最初はASRエンベロープ、後半はDecay(Release)エ�
 
 ### EG+VCA+Wavefolderモジュールを使ってみて
 
-実は作ってふた月くらい経つんですが（ブログに公開するの遅すぎ）、EGとVCAが一組あるので使いやすいのと、エンベロープで倍音に変化が付くのが単純に楽しくてついつい使ってます。  
+作ってふた月くらい経つんですがEGとVCAが一組あるので使いやすいのと、倍音に変化を付けられるのが単純に楽しくてついつい使ってます。  
 
 ![img](/assets/photos/20240806_IMGP8882.jpg)  
 
@@ -128,6 +128,6 @@ EG機能のデモ。最初はASRエンベロープ、後半はDecay(Release)エ�
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rw5O4wigSXM?si=zKP_D-YhyGTQNwuW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
-こちらは[KATさん](https://twitter.com/Ka_t_)デザインのLPGをVCAと入れ替えて。  
+こちらは[KATさん](https://twitter.com/Ka_t_)デザインのLPGをVCAと差し替えて。  
 EG+VCA+WAVEFOLDERモジュールのEGをASRモードにして、複数ゲートをORでミックスしたあとにEGに入れて使っています。  
 

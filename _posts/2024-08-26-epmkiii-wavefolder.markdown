@@ -8,10 +8,10 @@ image: 20240718_20240718-IMGP8804.jpg
 
 ![img](/assets/photos/20240718_20240718-IMGP8829.jpg)  
 
-## 早速詰め込んでみる
+## 詰め込んでみる
 
 [EurorackPlaygroundMkIII（以下ブレボ基板モジュール）]({% post_url 2024-07-31-eurorackplaygroundmkiii %}) 
-で早速モジュールを作りました。  
+でひとつめのモジュールを作りました。  
 Moritz Kleinという方の設計のダブルウェーブフォルダー回路です。シンプルなのに鳴りが気持ちよいのです。  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jbStEUfBWXY?si=qJQj-LrEdicI6Cf7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  

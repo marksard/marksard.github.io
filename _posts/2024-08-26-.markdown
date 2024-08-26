@@ -128,6 +128,6 @@ EG機能のデモ。最初はASRエンベロープ、後半はDecay(Release)エ�
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rw5O4wigSXM?si=zKP_D-YhyGTQNwuW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
-こちらはXで[KATさん](https://twitter.com/Ka_t_)デザインのLPGをVCAと入れ替えて。  
+こちらは[KATさん](https://twitter.com/Ka_t_)デザインのLPGをVCAと入れ替えて。  
 EG+VCA+WAVEFOLDERモジュールのEGをASRモードにして、複数ゲートをORでミックスしたあとにEGに入れて使っています。  
 

@@ -25,9 +25,10 @@ flickr: 95834336@N03
 
 # Google Analytics (you may want to changes these with yours or even delete :)
 ga_domain: marksard.github.io
-ga_tracking_id: UA-117920855-1
-google_analytics: UA-117920855-1
-google_analytics_4: G-HJSBRDF8NB
+# ga_tracking_id: UA-117920855-1
+#google_analytics: UA-117920855-1
+# google_analytics_4: G-HJSBRDF8NB
+google_analytics: G-HJSBRDF8NB
 
 # Handling Reading
 exclude: ["README.md", ".gitignore", "Gemfile", "Gemfile.lock", "vendor", "art"]

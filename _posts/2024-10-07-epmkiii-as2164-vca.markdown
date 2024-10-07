@@ -1,0 +1,65 @@
+---
+layout: post
+title: AS2164(SSM2164) Dual Variable Curve VCA
+date: 2024-10-07 11:00:00 +0900
+tag: [hardware, eurorack, synth]
+image: 20240718_20240718-IMGP8843.jpg
+---
+
+## VCAなんてなんぼあってもええんです
+
+VCAってオーディオの減衰コントロールだけじゃなく、アッテネータの代わりにとか、CV出力をCVでコントロールするとか、使いでがあって地味だけど数が欲しくなってきます。  
+
+ウチもそんな感じで追加で欲しいかもと思ってたのとAS2164もすでに買ってあったので、ハギヲさんのブログにあるV2164を使ったVCAの、CV入力の特性が可変するrev.2バージョン [$8 V2164 Dual VCA Rev.2 - DIY Eurorack Modular Synthesizer](https://note.com/solder_state/n/nd82c027d0597)を参考にAS2164で作りました。  
+AS2164のオリジナルICはアナデバのSSM2164で、互換品としてcoolaudioのV2164、アルファセミのAS2164、サウンドセミのSSI2164があるようです。わたしは秋月で販売されてるAS2164を購入しました。  
+
+## 回路
+
+さっそく回路図です。  
+
+![img](/assets/photos/as2164_vca.png)  
+
+ハギヲさんの記事の回路や元にされたvelisの回路を参考にしつつ、各データシートをベースに定数を調整しています。  
+
+2164は指数タイプのクアッドVCAですが、SSI2164のデータシートにはリニア化する回路例があります。VCA回路のひとつを反転してもうひとつのVCA回路のVCに入れることによって指数カーブを打ち消す仕組みかな。でこの回路からリニア↔︎指数可変にのポットを追加されているようです。  
+出力はIV変換だけだと出力が反転したままなので反転増幅をもう一段入れて正転に戻しています。  
+
+OPAMP - 可変抵抗/抵抗分圧 - VCAという感じでフィードバックループに可変抵抗が入ってて、これが指数⇔リニア調整になってます。VC1(VC4)への入力が少なくなると（GNDへ近づくと）指数側に近づき、逆に直結に近づけるとリニアになる感じ。  
+R116の4.7kを減らすと指数側のキレの良さが増しますが、リニア側と指数側でVCAの出力ゲインが大きく変わってくるので好みで調整という感じでしょうか。  
+
+半固定の調整。  
+まずGAIN (RV103/106)つまみ全閉時に音が消えるようにRV107/108を調整。  
+次にCV入力に対するゲイン調整。CV1/2ポット全開にして外部から5V程度の電圧をCV1/2に入れて、入力と出力でユニティゲイン、同じ電圧になるように調整。  
+
+![img](/assets/photos/20240718_20240718-IMGP8843.jpg)  
+
+前回と同じように、EurorackPlaygroundMkIII（ブレボ基板モジュール）で組みました。  
+パネルにはプリントシールをカットして貼り付け。デザインはいくらでも出来るのでもうちょっと凝っても良かったかも…  
+
+![img](/assets/photos/20240718_20240718-IMGP8845.jpg)  
+
+
+![img](/assets/photos/20240718_20240718-IMGP8856.jpg)  
+
+背面はこんな感じ。  
+パネルに置いたジャックやポットと繋ぐ部分は線材に頼るしかないですが、めちゃめちゃ気軽にモジュール化出来ます。  
+
+![img](/assets/photos/20240718_20240718-IMGP8859.jpg)  
+
+内側はこんな。間違えてパーツ取ったりもしているので綺麗ではないですが。  
+
+## デモ
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">エンベロープにリニアに反応してるところから、速く(指数的に)落ち込むところをデモ <a href="https://t.co/gRfhDZzCJI">https://t.co/gRfhDZzCJI</a> <a href="https://t.co/vSh5aVolel">pic.twitter.com/vSh5aVolel</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1812768971923566970?ref_src=twsrc%5Etfw">July 15, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+長めのエンベロープを入れて減衰量が変わるデモ。視覚的にわかるかと。  
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">AS2164(SSM2164)のVCAに付けたリニア↔︎指数変化のデモが一個しかないの寂しいなと思ったので…<br>白いモジュールの右側はエンベロープのリリースを、左側はVCAのリニア↔︎指数変化を触って変化させてます。<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#自作モジュラーシンセ</a> <a href="https://t.co/DhfufWW4vO">pic.twitter.com/DhfufWW4vO</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1829836871222038613?ref_src=twsrc%5Etfw">August 31, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+もうちょっと音楽的にしてみたかったので…  
+2台の白いモジュール、右が前回のEG+VCA+WAVEFOLDERモジュール、左が今回のデュアルVCAモジュール。右のモジュールはEGのトリガーモードで使っててリリースタイムのポット（時計まわりでリリース伸びる）をいじってます。  
+で左のモジュールはそのエンベロープCVを受けててカーブのポットをいじっています。（時計まわりで指数側へ）  
+
+自分が持っているEGのエンベロープカーブは指数カーブ固定なのですが、VCAの設定値を指数側に振るとよりPluckなサウンドに出来るのと、Pluck具合の調整がしやすくなること、EGだけの時より減衰でパツパツしすぎず良い感じになる（語彙）ので私が作ったEGとの組み合わせ的に良い感じ。  
+
+カーブ調整取っ払って、3chのVCA兼ミキサー＋オフセットモジュルみたいなのも欲しいかも…とVCAを増やそうか思案中。

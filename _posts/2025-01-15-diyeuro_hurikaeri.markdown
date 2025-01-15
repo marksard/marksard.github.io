@@ -22,16 +22,16 @@ image: 20240414_IMGP8686.jpg
 
 #### EEAOVCO (AS3340)
 
-https://github.com/marksard/EEAOVCO/tree/main  
-https://marksard.github.io/2024/05/10/eeaoVCO/  
+[github](https://github.com/marksard/EEAOVCO/tree/main)  
+[ブログ](https://marksard.github.io/2024/05/10/eeaoVCO/)  
 
 ![img](/assets/photos/20240414_IMGP8686.jpg)  
 
 
 #### JUNONE DCO (RP2040+OPAMP)
 
-https://github.com/marksard/JunoneDCO  
-https://marksard.github.io/2023/12/18/junonedco/  
+[github](https://github.com/marksard/JunoneDCO)  
+[ブログ](https://marksard.github.io/2023/12/18/junonedco/)  
 
 ![img](/assets/photos/20231214_IMGP8479.jpg)  
 
@@ -39,16 +39,16 @@ https://marksard.github.io/2023/12/18/junonedco/
 
 #### Minimalist LPF (V2044A)
 
-https://github.com/marksard/MinimalistLPF  
-https://marksard.github.io/2024/03/19/minimalistLPF-VCA/  
+[github](https://github.com/marksard/MinimalistLPF)  
+[ブログ](https://marksard.github.io/2024/03/19/minimalistLPF-VCA/)  
 
 ![img](/assets/photos/20231214_IMGP8492.jpg)  
 
 ### VCA (Voltage Controlled Amplifier)
 
 #### Minimalist VCA (V13700)
-https://github.com/marksard/MinimalistVCA  
-https://marksard.github.io/2024/03/19/minimalistLPF-VCA/  
+[github](https://github.com/marksard/MinimalistVCA)  
+[ブログ](https://marksard.github.io/2024/03/19/minimalistLPF-VCA/)  
 
 ![img](/assets/photos/20231214_IMGP8497.jpg)  
 
@@ -56,8 +56,8 @@ https://marksard.github.io/2024/03/19/minimalistLPF-VCA/
 
 #### Minimalist ADSR (LMC555)
 
-https://github.com/marksard/MinimalistADSR  
-https://marksard.github.io/2024/04/03/minimalistADSR/  
+[github](https://github.com/marksard/MinimalistADSR)  
+[ブログ](https://marksard.github.io/2024/04/03/minimalistADSR/)  
 
 ![img](/assets/photos/20240402_IMGP8681.jpg)  
 
@@ -65,8 +65,8 @@ https://marksard.github.io/2024/04/03/minimalistADSR/
 
 #### EightWaveformLFO (OPAMP)
 
-https://github.com/marksard/EightWaveformLFO  
-https://marksard.github.io/2023/12/14/eightwaveformlfo/  
+[github](https://github.com/marksard/EightWaveformLFO)  
+[ブログ](https://marksard.github.io/2023/12/14/eightwaveformlfo/)  
 
 ![img](/assets/photos/20231214_IMGP8466.jpg)  
 
@@ -81,8 +81,8 @@ Minimalist MixMulti（非公開）
 
 ### Eurorack Playground MkII
 
-https://github.com/marksard/EurorackPlaygroundMkII  
-https://marksard.github.io/2024/07/26/eurorackplaygroundmkii/  
+[github](https://github.com/marksard/EurorackPlaygroundMkII)  
+[ブログ](https://marksard.github.io/2024/07/26/eurorackplaygroundmkii/)  
 
 ![img](/assets/photos/20240718_20240718-IMGP8787.jpg)  
 
@@ -131,15 +131,15 @@ mkIIのモジュールが余ってないのでmkIモジュールで作ってみ�
 
 ### EurorackPlaygroundMkIII
 
-https://github.com/marksard/EurorackPlaygroundMkIII  
-https://marksard.github.io/2024/07/31/eurorackplaygroundmkiii/  
+[github](https://github.com/marksard/EurorackPlaygroundMkIII)  
+[ブログ](https://marksard.github.io/2024/07/31/eurorackplaygroundmkiii/)  
 
 ![img](/assets/photos/20240718_20240718-IMGP8865.jpg)  
 
 これでWavefolderVCA+EGモジュールと2VCAモジュールを作りました。  
 
-* EG+VCA+Wavefolderモジュール https://marksard.github.io/2024/08/26/epmkiii-wavefolder/
-* AS2164(SSM2164) Dual Variable Curve VCA https://marksard.github.io/2024/10/07/epmkiii-as2164-vca/
+* EG+VCA+Wavefolderモジュール [ブログ](https://marksard.github.io/2024/08/26/epmkiii-wavefolder/)
+* AS2164(SSM2164) Dual Variable Curve VCA [ブログ](https://marksard.github.io/2024/10/07/epmkiii-as2164-vca/)
 
 去年作ってたMinimalistVCAはもう外してしまってこの2つのVCAを常用しています。  
 

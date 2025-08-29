@@ -3,7 +3,7 @@ layout: post
 title: Trigger Happyモジュールを作った
 date: 2025-08-28 17:00:00 +0900
 tag: [hardware, eurorack, synth]
-image: 20250412_20250412-IMGP9018.jpg
+image: 20250624-IMGP9085.jpg
 ---
 
 ![img](/assets/photos/20250624-IMGP9085.jpg)  

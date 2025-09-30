@@ -1,0 +1,155 @@
+---
+layout: post
+title: AKIMBOモジュールを作った
+date: 2025-09-30 14:00:00 +0900
+tag: [hardware, eurorack, synth]
+image: 20250827_IMG_9424.jpg
+---
+
+![img](/assets/photos/20250827_IMG_9424.jpg)  
+
+[TriggerHappy]({% post_url 2025-08-28-trigger-happy %}) 試作中、ロジックICの代わりにDACチップを載せたモジュールも欲しいなと思い立って作りました。  
+TriggerHappyは「むやみに銃を撃ちたがる人」を揶揄する言葉と「複数の様々なゲート・トリガー出力あって嬉しい」を絡めていて、少し銃に関する言葉に関連していたので、今回は「AKIMBO」（二丁拳銃の意。DAC出力が2OUTあるので）にしました。
+
+---
+
+回路図、諸元、アプリなど→ [github](https://github.com/marksard/Akimbo/tree/main)
+
+## ハードウェア
+
+- 仕様
+  - 4HP  
+  - ±12V  
+  - Waveshare RP2040 zeroまたは互換ボード
+- 入出力
+  - 出力：2（±5V、調整トリムによる）  
+  - 入力：2（0–5V V/OCT対応）  
+  - CV入力：1（最大±5V、ポット付き）
+- 操作系
+  - ロータリーエンコーダー：1  
+  - ボタン：3（うち1つはロータリーエンコーダー内蔵）  
+  - ポット：1
+- 表示系
+  - フルカラーLED（ロータリーエンコーダー内蔵）
+
+## 回路の概要
+
+![img](https://raw.githubusercontent.com/marksard/Akimbo/refs/heads/main/_data/schematic01.png)  
+![img](https://raw.githubusercontent.com/marksard/Akimbo/refs/heads/main/_data/schematic02.png)  
+
+- 出力は2つ。SPI接続12bit DACチップ MCP4922を3.3Vで駆動、16kHzアクティブLPF → 増幅＋オフセットかけて±5V。  
+  - 半固定抵抗でピーク下限と上限を調整する。DAC出力0で-5000mV、DAC出力4095のときに+5000mVになるようにする。
+- CV入力はポット付きで±5Vを0～3.3Vに変換しADCへ。LFOやエンベロープなどのモジュレーションソースに対応。  
+- IN1/IN2はTriggerHappyモジュールと同様、高精度分圧＋バッファを経由してADCへ。5000mVを入力した時のADC値と分圧比からzero基板のリファレンス電圧を求めて、スケーリングとRP2040のエラッタ補正など
+を行い、VOCTスケールを0–5V範囲で取得。  
+- リファレンス電圧の取り方やノイズ成分が目立つ下限部分に課題はある（DMMでの計測より数百mV低めの計算結果になる。おそらくADC入力部のフィルタのせいかなと思う）が概ね良好な仕上がり。
+- CV入力につけたポットをプラ軸のコンパクトタイプ（RV09系）を少し加工してつけられるようにして4HPに収めた。  
+- 基板は2段構成。奥行きは約300mm程度。
+
+TriggerHappyの回路を下敷きにして、DACの2出力、それと対で使えるようV/OCTを受けれる0-5VのADC2入力、CV±5Vを受けれるポット付きのADC入力、アプリをコントロールするポットを組み込んで、DACを入れた感じです。  
+
+![img](/assets/photos/20250827_IMG_9425.jpg)  
+
+## ソフトウェア
+
+これまで[EurorackPlayground](https://github.com/marksard/EurorackPlayground)、[EurorackPlaygroundMkII](https://github.com/marksard/EurorackPlaygroundMkII)で作っていたアプリをこのモジュールに合わせて再構築。  
+
+### DualVCO
+
+- 独立したピッチCVを持つ2系統のデジタルVCO/LFO  
+- 基音はエンコーダーでルートノート設定＋ポットでFineTune調整  
+- 波形：Square、Saw、Triangle Multiply、Triangle、Sine、Noise  
+- ノート0と1はLFOとして動作（ポットで周波数設定）  
+  - Note 0：0.000001～0.1Hz  
+  - Note 1：0.1～8Hz  
+- CV入力によるモジュレーション処理選択  
+  - 波形変形（Pulse Width, Phase Shift, Wave Folder）  
+  - FM  
+  - SYNC  
+  - OFF
+
+### ChordVCO
+
+- 4音コード演奏・アルペジオ演奏デジタルVCO  
+- 基音はエンコーダーでNote番号設定  
+- IN1のピッチCV入力に対して最も近いNote番号で発音  
+- 波形：Square、Saw、Triangle Multiply、Triangle、Sine、Noise  
+- OUT1：コード出力（マイナー/メジャーコード）  
+  - ピッチホールドON/OFF（IN2の立ち上がりでCV保持）  
+- OUT2：アルペジオ出力  
+  - IN2のゲート入力でコード要素をステップ  
+  - ステップモード：UP / DOWN / RAND  
+- CV入力：波形変形（Pulse Width, Phase Shift, Wave Folder）
+
+### RhythmBox
+
+- IN1, IN2, CV入力による3トリガーで3バンク同時再生可能なサンプリングリズムプレイヤー  
+- バンク選択：  
+  - バンク0：BD1, BD2, LTOM  
+  - バンク1：SD1, SD2, RIMSHOT  
+  - バンク2：HH1, HH2, RC  
+- ステレオ出力  
+- 設定可能：VOL, PAN, PITCH, DECAY, MUTE
+
+### CheapRhythm
+
+- オシレータ＋ノイズ＋フィルターの構成でBD, SD, HH, LTの音色を出力するアナログライクなリズムモジュール  
+- IN2：音色選択（ピッチ変化付き）  
+- IN1：ゲート  
+- CV入力：ディケイタイム調整
+
+### DualEG
+
+- 独立した2系統のADSRエンベロープジェネレータ  
+- カーブタイプ：リニア / 指数  
+- Attack, Decay, Release：最大5秒まで設定可能
+
+### DigitalLPG
+
+- 入力12bit → 出力12bitの音声入出力デモ兼LPGライクなデジタルフィルターモジュール  
+- VCA → VCFの内部接続  
+- LPGモード：ディケイ調整付き  
+- ゲート入力を独立させてVCA＋VCFとしても使用可能
+
+### SmoothRandomCV
+
+- 2系統のS&H的ランダムCV  
+- データ＋S&H＋スルーリミッター構成  
+- トリガー入力でデータがホールドされ、スルーリミッターの設定でそのデータ値に近づく。
+- データはノイズ（ランダム）か1/fゆらぎの間欠カオス法データから選択。後者だと比較的落ち着いたランダム性になる
+
+## 感想
+
+TriggerHappyと同様、設定可能なパラメータへのアクセスが良くはないので工夫が必要だけど割と満足してます。  
+これまでのアプリを動かすためのモジュール[EurorackPlaygroundMkII]({% post_url 2024-07-26-eurorackplaygroundmkii %})で気になっていた、
+
+- I2CのOLED表示の処理負荷とか、ノイズが乗ってくるとか、悪さされがち
+- 6出力あって空き出力が勿体なくて機能詰め込んでしまい高負荷になりがち
+- PWM出力とあのLPF回路では音声出力にはちょっと物足りなさがある
+- 6chも出力があるのでアプリごとに出力・入力バイアス調整が必要で煩雑な感じがする
+
+といった点がスッキリしてアプリを作りやすくなった。  
+電源ケーブルが増えて電源とバスボードを圧迫するのが悩みの種ではあるけれど…。  
+
+![img](/assets/photos/20250920_IMG_9494.jpg)  
+
+現在のモジュラーケースの状態。  
+実はこのモジュールを3回発注してて、1回目はBOM出力でしくじっててほとんど使えないブツが届いて（バグの確認とアプリ作りたかったので2台組んだ）、2回目にちゃんとしたもの(2台組んだところで改善したい箇所が出てきた)、3回目は回路の改善…という感じで6台あります。  
+
+## デモ
+
+VCF/VCAのデモ的な。  
+リズムもベースラインもパッドもメロもAKIMBOのアプリ。  
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">12bitVCA/VCFアプリを作ってみた(奥のVCF/Aのラベル)<br>内部接続はVCA-&gt;VCF。EG信号は独立入力も可。<br>試作中のマニュアル入力16ステップシーケンサーで演奏。<br><br>自作デジタルモジュールだけでも完結出来るようになってきた<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB?src=hash&amp;ref_src=twsrc%5Etfw">#自作モジュラーシンセ</a> <a href="https://t.co/c6X9d33kw1">pic.twitter.com/c6X9d33kw1</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1963218705934094712?ref_src=twsrc%5Etfw">September 3, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+これもリズムもベースラインもパッドもメロもAKIMBOのアプリで。アナログVCOはデジタルVCOにFMかけてた記憶。  
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">バラしては繋いで鳴らして<br>が楽しい <a href="https://t.co/sXS6wdRYCh">pic.twitter.com/sXS6wdRYCh</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1965376357300617504?ref_src=twsrc%5Etfw">September 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+
+あるだけ繋いでみた、みたいな。  
+スネア、ハットの音はデジタルVCOからもらって、バスドラとサイン波メロはアナログVCOから。  
+この構成で5つVCOがあって一部LFOにもあるので、やっと色々音を作れるようになってきた感じです。  
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">昨日のセットの亜種<br>TriggerHappyのクロックディバイダーの分割セットをCVで可変させて、ゲートの出し方をランダムに<br>1オシレーターで上メロとサブベースを出してて、ドラムもメロもベースもインプロビゼーションしてくれる <a href="https://t.co/fWZYoI0ICi">pic.twitter.com/fWZYoI0ICi</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1970835717913002119?ref_src=twsrc%5Etfw">September 24, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

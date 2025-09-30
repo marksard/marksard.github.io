@@ -9,11 +9,11 @@ image: 20250827_IMG_9424.jpg
 ![img](/assets/photos/20250827_IMG_9424.jpg)  
 
 [TriggerHappy]({% post_url 2025-08-28-trigger-happy %}) 試作中、ロジックICの代わりにDACチップを載せたモジュールも欲しいなと思い立って作りました。  
-TriggerHappyは「むやみに銃を撃ちたがる人」を揶揄する言葉と「複数の様々なゲート・トリガー出力あって嬉しい」を絡めていて、少し銃に関する言葉に関連していたので、今回は「AKIMBO」（二丁拳銃の意。DAC出力が2OUTあるので）にしました。
+TriggerHappyは「むやみに銃を撃ちたがる人」を揶揄する言葉と「複数の様々なゲート・トリガー出力あって嬉しい」を絡めてて少し銃に関する言葉だったのもあり、今回は「AKIMBO」（二丁拳銃の意。DAC出力が2OUTあるので）にしました。
 
 ---
 
-回路図、諸元、アプリなど→ [github](https://github.com/marksard/Akimbo/tree/main)
+回路図、諸元、アプリのソースコードなど→ [github](https://github.com/marksard/Akimbo/tree/main)
 
 ## ハードウェア
 
@@ -38,12 +38,12 @@ TriggerHappyは「むやみに銃を撃ちたがる人」を揶揄する言葉�
 ![img](https://raw.githubusercontent.com/marksard/Akimbo/refs/heads/main/_data/schematic02.png)  
 
 - 出力は2つ。SPI接続12bit DACチップ MCP4922を3.3Vで駆動、16kHzアクティブLPF → 増幅＋オフセットかけて±5V。  
-  - 半固定抵抗でピーク下限と上限を調整する。DAC出力0で-5000mV、DAC出力4095のときに+5000mVになるようにする。
+  - 半固定抵抗でピーク下限と上限を調整する。DAC出力0で-5000mV、DAC出力4095のときに+5000mVになるように。
 - CV入力はポット付きで±5Vを0～3.3Vに変換しADCへ。LFOやエンベロープなどのモジュレーションソースに対応。  
-- IN1/IN2はTriggerHappyモジュールと同様、高精度分圧＋バッファを経由してADCへ。5000mVを入力した時のADC値と分圧比からzero基板のリファレンス電圧を求めて、スケーリングとRP2040のエラッタ補正など
-を行い、VOCTスケールを0–5V範囲で取得。  
-- リファレンス電圧の取り方やノイズ成分が目立つ下限部分に課題はある（DMMでの計測より数百mV低めの計算結果になる。おそらくADC入力部のフィルタのせいかなと思う）が概ね良好な仕上がり。
-- CV入力につけたポットをプラ軸のコンパクトタイプ（RV09系）を少し加工してつけられるようにして4HPに収めた。  
+- IN1/IN2はTriggerHappyモジュールと同様、高精度分圧＋バッファを経由してADCへ。5000mVを入力した時のADC値と分圧比からzero基板のリファレンス電圧を求めて、スケーリングとRP2040のエラッタ補正などを行い、VOCTスケールを0–5V範囲で取得。  
+- リファレンス電圧の取り方やノイズ成分が目立つ下限部分に課題はある（DMMでの計測より数百mV低めの計算結果になる。おそらくADC入力部のフィルタのせいかなと思う）が概ね良好。
+- CV入力につけたポットをプラ軸のコンパクトタイプ（RV09系）を少し加工してつけられるようにして4HPに収めました
+。  
 - 基板は2段構成。奥行きは約300mm程度。
 
 TriggerHappyの回路を下敷きにして、DACの2出力、それと対で使えるようV/OCTを受けれる0-5VのADC2入力、CV±5Vを受けれるポット付きのADC入力、アプリをコントロールするポットを組み込んで、DACを入れた感じです。  
@@ -133,8 +133,8 @@ TriggerHappyと同様、設定可能なパラメータへのアクセスが良�
 
 ![img](/assets/photos/20250920_IMG_9494.jpg)  
 
-現在のモジュラーケースの状態。  
-実はこのモジュールを3回発注してて、1回目はBOM出力でしくじっててほとんど使えないブツが届いて（バグの確認とアプリ作りたかったので2台組んだ）、2回目にちゃんとしたもの(2台組んだところで改善したい箇所が出てきた)、3回目は回路の改善…という感じで6台あります。  
+25年9月のモジュラーケースの状態。このモジュール6台あります…  
+実はこのモジュールを3回発注してて、1回目はBOM出力でしくじっててほとんど使えないブツが届いて（バグの確認とアプリ作りたかったので2台組んだ）、2回目にちゃんとしたもの(2台組んだところで改善したい箇所が出てきた)、3回目は回路の改善して完成で良いかなという感じで2台組んで合計6台。  
 
 ## デモ
 
@@ -152,4 +152,4 @@ VCF/VCAのデモ的な。
 スネア、ハットの音はデジタルVCOからもらって、バスドラとサイン波メロはアナログVCOから。  
 この構成で5つVCOがあって一部LFOにもあるので、やっと色々音を作れるようになってきた感じです。  
 
-<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">昨日のセットの亜種<br>TriggerHappyのクロックディバイダーの分割セットをCVで可変させて、ゲートの出し方をランダムに<br>1オシレーターで上メロとサブベースを出してて、ドラムもメロもベースもインプロビゼーションしてくれる <a href="https://t.co/fWZYoI0ICi">pic.twitter.com/fWZYoI0ICi</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1970835717913002119?ref_src=twsrc%5Etfw">September 24, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">昨日のセットの亜種<br>TriggerHappyのクロックディバイダーの分割セットをCVで可変させて、ゲートの出し方をランダムに<br>1オシレーターで上メロとサブベースを出してて、ドラムもメロもベースもインプロビゼーションしてくれる <a href="https://t.co/fWZYoI0ICi">pic.twitter.com/fWZYoI0ICi</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://twitter.com/marksard/status/1970835717913002119?ref_src=twsrc%5Etfw">September 24, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  

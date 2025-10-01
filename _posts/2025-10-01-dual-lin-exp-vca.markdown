@@ -28,6 +28,9 @@ image: 20250827_IMG_9426.jpg
 
 ## 回路の概要
 
+![img](https://raw.githubusercontent.com/marksard/DualLinExpVCA/refs/heads/main/manual/img/schematic01.png)  
+![img](https://raw.githubusercontent.com/marksard/DualLinExpVCA/refs/heads/main/manual/img/schematic02.png)  
+
 先日作ったVCAの回路をベースにして以下を変更：
 
 - リニア/指数可変機能を**連続可変式からスイッチ式**に変更  

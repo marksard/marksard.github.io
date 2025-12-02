@@ -40,7 +40,7 @@ image: 20251128_IMGP9123.jpg
 パン回路は **Analog Devices のアクティブパン回路**を参考にしました。  
 <https://www.analog.com/media/jp/analog-dialogue/volume-44/number-2/articles/ultralow-distortion-panpot-amplifier_jp.pdf>
 
-- MNカーブの基板用ポットが見つからない
+- NMカーブ（やACカーブ）の基板用ポットが見つからない
 - パッシブBカーブだとセンター -6dBが気に入らない
 - でもデジタルにはしたくない  
 
@@ -140,3 +140,4 @@ CV ミキサーとして **Happy Nerding 3x MIA** に魅力を感じていたも
 - 経路内の抵抗数の不一致
 
 あたりが疑わしいところ。
+

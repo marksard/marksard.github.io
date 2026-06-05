@@ -26,13 +26,13 @@ CVへ入力信号より少し大きめの正電圧を与えると歪まず通過
 
 ---
 
-そういえば以前作って、Xに動画を上げたこちらのパッシブ回路もありました。
+そういえば以前作って、Xに動画を上げたこちらのパッシブ回路もありました。（Xの埋め込みできなかった…）
 
-https://x.com/marksard/status/1934245367379558730/video/1
+[https://x.com/marksard/status/1934245367379558730/video/1](https://x.com/marksard/status/1934245367379558730/video/1)
 
 元ネタはこちら。
 
-https://www.youtube.com/watch?v=QZIKUEhejMQ
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QZIKUEhejMQ?si=FAb34Ao3_MZi93vI&amp;start=451" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 波形はかなり変形しますが、CVで音量を制御できるので、これも実質的にはVCAです。
 

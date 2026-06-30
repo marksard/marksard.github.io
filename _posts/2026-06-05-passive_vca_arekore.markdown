@@ -10,7 +10,7 @@ image: 20260605_IMG_0121.jpg
 
 アナログスイッチICを使わず、簡単にミュートできるような回路を探していたときに、JFETでミュートするシンプルな回路を見つけました。
 
-https://sound-au.com/articles/muting.html
+[https://sound-au.com/articles/muting.html](https://sound-au.com/articles/muting.html)
 
 これってパッシブ回路として動くよな、ということで少しアレンジしたのがこちらです。
 
@@ -22,13 +22,13 @@ https://sound-au.com/articles/muting.html
 
 CVへ入力信号より少し大きめの正電圧を与えると歪まず通過し、CV電圧が下がるに従って正電圧側が歪みながら音量も下がっていきます。
 
-少々クセはありますが、パッシブVCAとして機能します。ただ、EGと組み合わせて遊んでいると、減衰時の歪み方が少々きつく感じることもあります。
+少々クセはありますが、パッシブVCAとして機能します（もちろんミュート回路としても）。ただ、EGと組み合わせて遊んでいると、減衰時の歪み方が少々きつく感じることもあります。
 
 ---
 
-そういえば以前作って、Xに動画を上げたこちらのパッシブ回路もありました。（Xの埋め込みできなかった…）
+そういえば以前作って、Xに動画を上げたこちらのパッシブ回路もありました。
 
-[https://x.com/marksard/status/1934245367379558730/video/1](https://x.com/marksard/status/1934245367379558730/video/1)
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">VCA/RingMod/WaveshaperなPatchPalを作った<br>2N5452じゃなくパーツ箱で見つけたJFETだからQuincas氏のと波形は違うかも <a href="https://t.co/HK0dcK30WC">pic.twitter.com/HK0dcK30WC</a></p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://x.com/marksard/status/1934245367379558730?ref_src=twsrc%5Etfw">June 15, 2025</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
 元ネタはこちら。
 

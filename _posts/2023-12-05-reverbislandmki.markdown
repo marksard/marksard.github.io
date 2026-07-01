@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Reverb Island MkI
+title: ReverbIsland MkI
 date: 2023-12-05 20:00:00 +0900
 tag: [hardware, eurorack, synth]
 image: 20231203_IMGP8421.jpg
 ---
 
 ![img](/assets/photos/20231203_IMGP8421.jpg)  
+
+[リファインしたFV-1エフェクターモジュールもお読みください]({% post_url 2026-07-01-reverbislandmkII %})
 
 ## 音出していじりながら作りたいので先にエフェクターを
 

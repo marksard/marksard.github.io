@@ -34,7 +34,10 @@ google_analytics: G-HJSBRDF8NB
 exclude: ["README.md", ".gitignore", "Gemfile", "Gemfile.lock", "vendor", "art"]
 
 # Plugins
-gems: [jekyll-redirect-from, jekyll-paginate]
+plugins:
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-remote-theme
 
 # Conversion
 markdown: kramdown
@@ -54,3 +57,4 @@ sass:
   sass_dir: _scss
   style: :compressed
 
+# remote_theme: pages-themes/hacker@v0.2.0

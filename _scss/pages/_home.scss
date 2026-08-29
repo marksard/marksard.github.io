@@ -1,6 +1,6 @@
 .label {
     padding: $spacing-s $spacing-m;
-    background: white;
+    background: $smoke-color;
     color: $text-secondary;
 
     a {
@@ -21,7 +21,7 @@
 
     .p-wrap {
       padding: $spacing-ml $spacing-m;
-      background: white;
+      background: $smoke-color;
       transition: all .15s ease-in;
 
       &:active {
@@ -29,7 +29,8 @@
       }
 
       &:hover {
-        background: $accent-light;
+        color: $accent-light;
+        background: $primary-dark;
 
         @media (min-width: 943px) {
           padding-left: $spacing-m + $spacing-s;
@@ -60,7 +61,7 @@
     }
 
     a {
-      color: $primary-dark;
+      color: $accent;
       text-decoration: none;
     }
 
@@ -98,6 +99,7 @@
 
   a:hover {
       text-decoration: none;
-      background-color: $accent-light;
+      color: $accent-light;
+      background: $primary-dark;
   }
 } // end .pagination

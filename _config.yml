@@ -1,8 +1,9 @@
 # Title of your blog; shows in the header
 name: "キオクノロンダリング"
+title: "キオクノロンダリング"
 
 # Description of your content (will only be used on Google Search)
-description: "marksard, 3rdproject, magnetwindow"
+description: "marksard, 3rdproject, magnetwindow, eurorack, diyeurorack, moduler, synthsizer"
 
 # Your name. Will show in your footer + sidebar
 author: "marksard"
@@ -45,7 +46,7 @@ highlighter: rouge
 
 # Outputting
 permalink: pretty
-paginate: 5
+paginate: 8
 paginate_path: "/page/:num"
 
 # Markdown Processors

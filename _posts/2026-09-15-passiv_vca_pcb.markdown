@@ -71,6 +71,16 @@ VTL5C3は良い感じだったけどLCR020xの7倍くらいのお値段するの
 ![img](/assets/photos/20260915_IMG_0318.jpg)  
 
 
+### デモ
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ただただ使ってみた動画🎥
+BootlegのEGとDCO2個
+残りはリズム隊
+VCAには無い栄養素がある気がする
+#diyeurorack https://t.co/HHkkV7SpeX</p>&mdash; 𓊬 ᙢᗩᖇḰ 𓊬 (@marksard) <a href="https://x.com/marksard/status/2094786892911022189?ref_src=twsrc%5Etfw">September 1, 2026</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
+
 ### 基板の発注ついでの発注
 
 基板の発注ついでに[Eurorack Playground MkIII]({% post_url 2024-07-31-eurorackplaygroundmkiii %})用のパネルを作り直し。プリンタでシールを貼って使ってたものの、シールのテカりやフチの剥がれみたいなのが気になって…  

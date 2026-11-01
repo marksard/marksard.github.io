@@ -16,7 +16,7 @@ image: 20261015-IMGP9228.jpg
 
 ![img](/assets/photos/tl074_vclfo_schematic.png)  
 
-そのVCLFOは[TL074 VCO](https://tremodular.com/single-opamp-vclfo/)という回路。三角波+矩形波コアの定番LFO回路をベースにCV操作出来るように拡張されたものでTL074を1個とBC557というシンプルさ。これをベースにちょっと改造。  
+そのVCLFOは[TL074 VCLFO](https://tremodular.com/single-opamp-vclfo/)という回路。三角波+矩形波コアの定番LFO回路をベースにCV操作出来るように拡張されたものでTL074を1個とBC557というシンプルさ。これをベースにちょっと改造。  
 
 * LFO周期を変更、周期選択スイッチを追加
 * 出力を±5V程度に調整
